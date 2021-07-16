@@ -9,7 +9,7 @@ if (isset($_POST['del']))
 		$pdo->query("DELETE FROM project WHERE id='".$keys."'");
 		$pdo->query("ALTER TABLE project AUTO_INCREMENT = '".$keys."'");
 	}
-	header("Location:Project_tool.php");
+	header("Location:project_tool.php");
 }
 
 if (isset($_POST['add_prj']))
@@ -22,7 +22,7 @@ if (isset($_POST['add_prj']))
 		else
 			$vis = 0;
 		$pdo->query("INSERT INTO project VALUES (DEFAULT, '".$_POST['title_a']."', '".$_POST['purpose_a']."', '".$_POST['link_a']."', '".$_POST['git_link_a']."', '".$_POST['pctr_name_a']."', $vis)");
-		header("Location:Project_tool.php");
+		header("Location:project_tool.php");
 	}
 }
 
@@ -42,6 +42,6 @@ if (isset($_POST['chg']))
 		$pdo->query("UPDATE project SET display=1 WHERE id='".$_POST['id']."'");
 	else
 		$pdo->query("UPDATE project SET display=0 WHERE id='".$_POST['id']."'");
-	header("Location:Project_tool.php");
+	header("Location:project_tool.php");
 }
 ?>

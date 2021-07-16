@@ -11,11 +11,11 @@ function display($res)
 		echo "<tr>";
 		echo "<form action='project_tool.php' method='post'>";
 		echo "<input value='".$elem['id']."' name='id' type='hidden'</input>";
-		echo "<td><input id='a".$elem['id']."' type='text' value='". $elem['title']."' maxlength='50' name='title' disabled></input></td>";
-		echo "<td><input id='a".$elem['id']."' type='text' value='". $elem['purpose']."' maxlength='500' name='purpose' disabled></input></td>";
-		echo "<td><input id='a".$elem['id']."' type='text' value='". $elem['link']."' maxlength='100' name='link' disabled></input></td>";
-		echo "<td><input id='a".$elem['id']."' type='text' value='". $elem['git_link']."' maxlength='100' name='git_link' disabled></input></td>";
-		echo "<td><input id='a".$elem['id']."' type='text' value='". $elem['pctr_name']."' maxlength='50' name='pctr_name' disabled></input></td>";
+		echo '<td><input id="a'.$elem['id'].'" type="text" value="'. $elem['title'].'" maxlength="50" name="title" disabled></input></td>';
+		echo '<td><input id="a'.$elem['id'].'" type="text" value="'. $elem['purpose'].'" maxlength="500" name="purpose" disabled></input></td>';
+		echo '<td><input id="a'.$elem['id'].'" type="text" value="'. $elem['link'].'" maxlength="100" name="link" disabled></input></td>';
+		echo '<td><input id="a'.$elem['id'].'" type="text" value="'. $elem['git_link'].'" maxlength="100" name="git_link" disabled></input></td>';
+		echo '<td><input id="a'.$elem['id'].'" type="text" value="'. $elem['pctr_name'].'" maxlength="50" name="pctr_name" disabled></input></td>';
 		if ($elem['display'] == 1)
 			echo "<td><input type='checkbox' id='a".$elem['id']."' name='display' checked disabled></input></td>";
 		else
