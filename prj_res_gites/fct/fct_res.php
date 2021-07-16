@@ -1,0 +1,9 @@
+<?php
+require_once("db_con.php");
+require_once("class_gite.php");
+if(isset($_POST['btn_res']))
+{
+	Gite::send_mail($_POST['mail']);
+	Gite::res_gite($_POST['id']);
+	Header("Location:index.php");
+}

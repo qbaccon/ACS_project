@@ -1,0 +1,143 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('Abel-Regular.ttf');
+}
+
+html
+{
+	background-image: url("../pctrs/bck_top.gif");
+}
+
+body
+{
+	margin: 0px;
+}
+
+#exit
+{
+	background-color: #e5e5e5;
+	padding: 5px 10px 5px 0px;
+}
+
+a
+{
+	padding: 0px 10px 0px 10px;
+	text-decoration: none;
+	font-family: Audiowibe;
+	font-size: 25px;
+	color: #1c1c8a;
+	border: solid 3px #e5e5e5;
+	border-radius: 10px;
+	transition-duration: 0.15s;
+}
+
+a:hover
+{
+	color: #e5e5e5;
+	background-color: #1c1c8a;
+	transition-duration: 0.15s;
+}
+
+#login_form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1
+{
+	padding: 5px;
+	margin-top: 70px;
+	margin-bottom: 80px;
+	text-align: center;
+	font-size: 25px;
+	font-family: Audiowibe;
+	font-weight: normal;
+	color: #1c1c8a;
+	border-radius: 10px;
+	background-color: #e5e5e585;
+}
+
+#login_form form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 25px;
+	padding: 30px;
+	background-color: #e5e5e585;
+	border-radius: 25px;
+}
+
+#subtitle
+{
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+	font-family: Abel;
+	font-size: 22px;
+	color: #e5e5e5;
+	background-color: #1c1c8a;
+	border-radius: 15px;
+}
+
+form input, form input::placeholder
+{
+	font-family: Abel;
+	font-size: 20px;
+	text-align: center;
+}
+
+form input
+{
+	color: #e5e5e5;
+	background-color: #1c1c8a75;
+	border: solid 2px #e5e5e585;
+	width: 225px;
+	border-radius: 10px;
+	outline: none;
+}
+
+form input::placeholder
+{
+	font-style: italic;
+	color: #e5e5e5;
+}
+
+form button
+{
+	margin-top: 22px;
+	font-family: Audiowibe;
+	font-size: 20px;
+	color: #e5e5e5;
+	background-color: #1c1c8a;
+	border: solid 3px #1c1c8a;
+	border-radius: 10px;
+	transition-duration: 0.15s;
+}
+
+form button:hover
+{
+	color: #1c1c8a;
+	background-color: #e5e5e5;
+	transition-duration: 0.15s;
+}
+
+p#bad_entry
+{
+	text-align: center;
+	font-family: Abel;
+	font-size: 20px;
+	color: #b10c0c;
+	background-color: #e5e5e5;
+	border: solid 3px #b10c0c;
+	padding: 0px 5px 0px 5px;
+	border-radius: 10px;
+}

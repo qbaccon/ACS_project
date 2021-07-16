@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.bloc_n3
+{
+	background-color: #ffffff;
+}
+
+.title
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	column-gap: 220px;
+	padding-top: 65px;
+	padding-bottom: 45px;
+}
+
+div.title h1
+{
+	color: #858585;
+	font-size: 25px;
+}
+
+div.title h2
+{
+	font-size: 34px;
+	font-family: Montserrat;
+	font-weight: bolder;
+	color: #000000;
+}
+
+div.p1
+{
+	margin-left: 30px;
+}
+
+div.p2
+{
+	margin-right: 30px;
+}
+
+.btn_view
+{
+	padding: 10px 30px 10px 30px;
+	border-radius: 25px;
+	border: 0px;
+	font-size: 15px;
+	background-color: #00caff;
+	color: #ffffff;
+	font-family: Cambay;
+	transition-duration: 0.8s;
+}
+
+.btn_view:hover
+{
+	border-radius: 25px;
+	border: solid 2px;
+	background-color: #ffffff;
+	color: #00caff;
+	transition-duration: 0.4s;
+}
+
+.exprj
+{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.prj1
+{
+	display: flex;
+	flex-flow: row wrap;
+	width: 920px;
+	height: 788px;
+}
+
+.prj2
+{
+	display: flex;
+	flex-flow: column wrap;
+	width: 960px;
+	height: 788px;
+}
+
+#lastp
+{
+	margin-left: auto;
+}

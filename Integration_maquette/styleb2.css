@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+div
+{
+	font-family: Cambay;
+}
+
+.bloc_n2
+{
+	background: #0081ff;
+	color: #ffffff;
+}
+
+.firstr
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	column-gap: 45px;
+	padding-top: 90px;
+}
+
+.skill
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	column-gap: 60px;
+}
+
+div.about_me p
+{
+	font-family: Montserrat;
+	font-weight: bolder;
+	font-size: 35px;
+	width: 450px;
+}
+
+div.about_me h1
+{
+	font-weight: normal;
+	font-size: 28px;
+}
+
+div.about_me2
+{
+	padding-bottom: 55px;
+}
+
+.about_me2 p
+{
+	font-family: Cambay;
+	font-size:20px;
+	margin-top: 15px;
+}
+
+.about_me2 #ame2p
+{
+	margin-top: 67px;
+	text-align: justify;
+	width: 580px;
+	font-family: Cambay;
+	font-size:20px;
+}
+
+.skill
+{
+	flex-flow: row wrap;
+	gap: 25px;
+	background: #0073e6;
+	padding-top: 65px;
+	padding-bottom: 75px;
+}
+
+.skill #titre
+{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Montserrat;
+}
+
+.skill img
+{
+	margin-top: 8px;
+}
+
+.first
+{
+	width: 250px;
+	font-size: 16px;
+	font-family: Cambay;
+}
+
+.second
+{
+	width: 250px;
+	font-size: 16px;
+	font-family: Cambay;
+}
+
+.third
+{
+	width: 250px;
+	font-size: 16px;
+	font-family: Cambay;
+}
+
+.network
+{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	padding-left: 35px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.network p
+{
+	margin-top: 15px;
+}
+
+.network #token
+{
+	display: flex;
+	flex-flow: row wrap;
+	gap: 25px;
+	margin-left: 125px;
+}

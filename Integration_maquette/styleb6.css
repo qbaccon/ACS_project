@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.bloc_n6
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 100px;
+	font-family: sans-serif;
+	background-image: url("pictures/bckb6.jpg");
+	color: #ffffff;
+	padding-top: 175px;
+	padding-bottom: 175px;
+}
+
+.info
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.info h2
+{
+	padding-bottom: 28px;
+}
+
+.info span
+{
+	color: #696969;
+}
+
+.info #phone
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.info #dated
+{
+	padding-bottom: 10px;
+}
+
+div.info h1
+{
+	font-size: 22px;
+}
+
+div.info h2
+{
+	font-family: Montserrat;
+	font-weight: bolder;
+}
+
+.contact
+{
+	padding-top: 33px;
+	font-family: "Arial Black";
+}
+
+.contact p
+{
+	color: #696969;
+	font-family: Cambay;
+}
+
+.contact h2
+{
+	margin-bottom: 35px;
+	font-family: Montserrat;
+	font-weight: bolder;
+}
+
+form input:hover, form textarea:hover
+{
+	box-shadow: 0px 0px 15px 10px #adadad;
+	transition-duration: 0.4s;
+}
+
+form input
+{
+	border-radius: 25px;
+	border-color: #adadad;
+	background: #3f3f3f;
+	color: #ffffff;
+	width: 205px;
+	height: 32px;
+	margin-top: 20px;
+	text-indent: 15px;
+	font-family: Cambay;
+	transition-duration: 0.4s;
+}
+
+form textarea::placeholder
+{
+	text-align: center;
+	font-family: Cambay;
+}
+
+form input#name
+{
+	margin-right: 40px;
+}
+
+form textarea
+{
+	border-radius: 25px;
+	background: #3f3f3f;
+	border-color: #adadad;
+	color: #ffffff;
+	width: 460px;
+	height: 115px;
+	text-indent: 25px;
+	margin-top: 50px;
+	transition-duration: 0.4s;
+}
+
+form button
+{
+	border-radius: 30px;
+	border: 0px;
+	background: #0081ff;
+	color: #ffffff;
+	width: 120px;
+	height: 50px;
+	margin-top: 35px;
+	transition-duration: 0.4s;
+}
+
+form button:hover
+{
+	box-shadow: 0px 0px 15px 10px #696969;
+	transition-duration: 0.4s;
+}
+
+form *:focus
+{
+	background: #222222;
+	border-radius: 25px;
+	border-color: #e0e0e0;
+	color: #ffffff;
+	outline: none;
+}
+
+#adrm
+{
+	color: #0081ff;
+}

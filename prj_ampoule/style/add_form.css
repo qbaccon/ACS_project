@@ -1,0 +1,229 @@
+body
+{
+	background: #0a0a0a;
+	margin: 0px;
+}
+
+.action_page
+{
+	font-family: Arial;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+.title
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.title p
+{
+	background: #1d1d1d;
+	color: #2e74ad;
+	border-radius: 25px;
+	border: 4px solid;
+	border-color: #2e74ad;
+	padding: 20px;
+	font-size: 28px;
+}
+
+@media (max-width: 659px)
+{
+	.title p
+	{
+		font-size: 24px;
+	}
+}
+
+.form
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding-top: 25px;
+}
+
+form
+{
+	background: #1d1d1d;
+	padding: 30px;
+	border-radius: 20px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	gap: 30px;
+}
+
+form p
+{
+	color: #2e74ad;
+	border-color: #2e74ad;
+	border: solid 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 20px;
+	background-color: #0a0a0a;
+	border-radius: 10px;
+	font-family: Arial;
+}
+
+form div input
+{
+	width: 250px;
+	height: 30px;
+	font-size: 20px;
+	background: #0a0a0a;
+	color: #2e74ad;
+	border-radius: 10px;
+	transition-duration: 0.2s;
+	outline: none;
+}
+
+form div input:hover, form div input:focus
+{
+	background: #606060;
+	color: #000000;
+	transition-duration: 0.2s;
+}
+
+form div input::placeholder
+{
+	color: #2e74ad;
+	font-style: italic;
+}
+
+form div input:hover::placeholder, form div input:focus::placeholder
+{
+	color: #000000;
+}
+
+form .btn button
+{
+	border: solid 2px;
+	border-color: #2e74ad;
+	margin-top: 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	background: #0a0a0a;
+	color: #2e74ad;
+	transition-duration: 0.2s;
+}
+
+form .btn button:hover
+{
+	background: #2e74ad;
+	color: #ffffff;
+	transition-duration: 0.2s;
+}
+
+@media (max-width: 370px)
+{
+	form
+	{
+		width: 130px;
+	}
+
+	form div input
+	{
+		width: 100px;
+		height: 20px;
+		font-size: 16px;
+	}
+
+	form .btn button
+	{
+		margin-top: 10px;
+		font-size: 15px;
+	}
+}
+
+.end
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 25px;
+	padding-top: 25px;
+}
+
+.end p
+{
+	background: #252525;
+	margin: 15px;
+	padding: 5px;
+	border-radius: 10px;
+	border: solid 3px;
+	border-color: #252525;
+	right: 0px;
+	bottom: 0px;
+	font-size: 20px;
+	text-align: center;
+	transition-duration: 0.2s;
+}
+
+.end p:hover
+{
+	background: #0a0a0a;
+	border: solid 3px;
+	border-color: #2e74ad;
+	box-shadow: 0px 0px 30px #2e74ad;
+	transition-duration: 0.2s;
+}
+
+.end p a
+{
+	text-decoration: none;	
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #2e74ad;
+}
+
+/* Style du message temporaire */
+#snackbar {
+	visibility: hidden; /* Hidden by default. Visible on click */
+	min-width: 250px; /* Set a default minimum width */
+	margin-left: -125px; /* Divide value of min-width by 2 */
+	background-color: #333; /* Black background color */
+	color: #fff; /* White text color */
+	text-align: center; /* Centered text */
+	border-radius: 2px; /* Rounded borders */
+	padding: 16px; /* Padding */
+	position: fixed; /* Sit on top of the screen */
+	z-index: 1; /* Add a z-index if needed */
+	left: 50%; /* Center the snackbar */
+	bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+	visibility: visible; /* Show the snackbar */
+	/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+	However, delay the fade out process for 2.5 seconds */
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+	from {bottom: 0; opacity: 0;}
+	to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+	from {bottom: 30px; opacity: 1;}
+	to {bottom: 0; opacity: 0;}
+  }

@@ -1,0 +1,182 @@
+/* Définitions des polices personnalisées */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* Eléments principaux de la page */
+
+body {
+
+    background-color: #181818;
+}
+
+#bloc_n1 {
+
+	padding: 50px 30px 250px 30px;
+	font-family: Cambay;
+	background-color: #181818;
+	background-image: url("pictures/bckb1.png");
+}
+
+nav a {
+
+    font-weight: normal;
+}
+
+/*Header*/
+
+.hb1 {
+
+    display: flex;
+	flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titre_principal {
+
+    display: flex;
+    flex-direction: column;
+}
+   
+#logo {
+
+    display: flex;
+    flex-direction: row;
+	font-size: 32px;
+	font-family: Montserrat;
+	font-weight: bold;
+    color: #fff;
+}
+
+#logo p
+{
+	padding-top: 8px;
+}
+
+div#logo h1
+{
+	font-weight: bold;
+	font-size: 28px;
+}
+
+/* Navigation */
+
+nav ul {
+
+    list-style-type : none;
+    display: flex;
+	flex-flow: row wrap;
+	gap: 30px;
+	font-size: 20px;
+	font-family: Montserrat;
+}
+
+nav a {
+
+    font-size: 0.8em;
+    color: #fff;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+    color: #84817a;
+	font-size: 20px;
+}
+
+/* Bouton buy */ 
+
+.btn_jaune {
+
+	display: flex;
+	flex-flow: row wrap;
+    border: 1px solid #f1c40f;
+    border-radius: 18px;
+    box-shadow: 1px 1px 1px #f1c40f;
+    opacity: 1;
+    font-size: 12px;
+    padding: 10px 25px 10px 25px;
+    color: #f1c40f;
+    text-decoration: none;
+	font-family: Montserrat;
+	font-weight: bold;
+	transition-duration: 0.8s;
+}
+
+.btn_jaune:hover
+{
+	color: #f1c40f;
+	background: #000000;
+	transition-duration: 0.4s;
+}
+
+/* Corps */
+
+section#bloc_n1 {
+
+    color: #fff;
+}
+
+div#hi_there
+{
+	padding-top: 225px;
+}
+
+#hi {
+	font-size: 28px;
+}
+
+#my_name {
+
+    font-size: 45px;
+	font-family:  Montserrat;
+	font-weight: bolder;
+}
+
+#my_name span {
+
+    color: #0984e3;
+}
+
+#job {
+
+    font-size: 30px;
+	font-family:  Montserrat;
+}
+
+p#prgh {
+
+	font-size: 18px;
+	width: 450px;
+    color: #84817a;
+	margin-bottom: 75px;
+}
+
+/* Bouton about */
+
+.btn_about {
+
+    font-size: 12px;
+	font-weight: bold;
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 25px;
+    opacity: 1;
+    padding: 16px 30px 16px 30px;
+    color: #fff;
+	background-color: #3f3f3f;
+    text-decoration: none;
+	font-family: Montserrat;
+	transition-duration: 0.8s;
+}
+
+.btn_about:hover
+{
+	color: #ffffff;
+	background: #000000;
+	border: solid 2px;
+	border-color: #3f3f3f;
+	transition-duration: 0.4s;
+}

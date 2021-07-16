@@ -1,0 +1,70 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('Abel-Regular.ttf');
+}
+
+body
+{
+	margin: 0px;
+	background-image: url("../pctr/bck_port_day.gif");
+	background-size: repeat;
+}
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1
+{
+	margin: 80px;
+	font-size: 25px;
+	font-family: Audiowibe;
+	color: #101010;
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #b5b5b5;
+	padding: 25px;
+	border-radius: 15px;
+	gap: 25px;
+}
+
+form input
+{
+	background: #d5d5d5;
+	font-family: Abel;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+button
+{
+	border: solid 2px #4860cf;
+	border-radius: 8px;
+	background-color: #4860cf;
+	color: #101010;
+	font-size: 20px;
+	font-family: Audiowibe;
+	transition-duration: 0.15s;
+}
+
+button:hover
+{
+	background-color: #101010;
+	color: #4860cf;
+	transition-duration: 0.15s;
+}

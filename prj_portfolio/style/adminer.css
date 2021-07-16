@@ -1,0 +1,256 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('Abel-Regular.ttf');
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	margin: 0px;
+	background-image: url("../pctr/bck_port_day.gif");
+	background-size: repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.exit
+{
+	position: fixed;
+	top: 8px;
+	left: -5px;
+}
+
+.exit a
+{
+	font-family: Audiowibe;
+	font-size: 20px;
+	text-decoration: none;
+	background-color: #4860cf;
+	color: #101010;
+	border: solid 3px #4860cf;
+	border-radius: 0px 0px 30px 0px;
+	padding: 8px 20px 8px 15px;
+	transition-duration: 0.15s;
+}
+
+.exit a:hover
+{
+	background-color: #101010;
+	color: #4860cf;
+	transition-duration: 0.15s;
+}
+
+h1
+{
+	font-family: Audiowibe;
+	color: #101010;
+	font-size: 28px;
+	margin: 80px;
+	text-align: center;
+}
+
+.list
+{
+	width: 100%;
+}
+
+.list form
+{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	text-align: center;
+	background-color: #b5b5b5;
+	padding: 25px;
+	gap: 20px;
+}
+
+th, td
+{
+	font-size: 20px;
+	font-family: Abel;
+	vertical-align: middle;
+	border: solid 2px;
+	border-color: #4860cf;
+}
+
+th
+{
+	background-color: #4860cf;
+	font-size: 25px;
+	color: #b5b5b5;
+}
+
+td input[type='text']
+{
+	width: 90%;
+	text-align: center;
+	font-family: Abel;
+	font-size: 20px;
+	color: #101010;
+	background-color: #b5b5b5;
+	outline: none;
+}
+
+td input[type='text']:focus
+{
+	background-color: #d5d5d5;
+}
+
+td input[disabled]
+{
+	background: none;
+	border: none;
+}
+
+button
+{
+	border: solid 2px #4860cf;
+	border-radius: 8px;
+	background-color: #4860cf;
+	color: #101010;
+	font-size: 20px;
+	font-family: Audiowibe;
+	transition-duration: 0.15s;
+	margin: 0px 15px 0px 15px;
+}
+
+button:hover
+{
+	color: #4860cf;
+	background-color: #101010;
+	transition-duration: 0.15s;
+}
+
+button.chg, button.activate
+{
+	font-family: Abel;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+button.chg
+{
+	display: none;
+}
+
+div.add_modal
+{
+	display: none;
+	position: fixed;
+	padding: 30px;
+	top: 20%;
+	background: #a0a0a0;
+	border: solid 6px;
+	border-color: #d5d5d5;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+@media (max-width:600px)
+{
+	div.add_modal
+	{
+		left: 30px;
+	}
+}
+
+div.modal_container
+{
+	background: #a0a0a0;
+	padding: 0px;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s
+}
+
+div.modal_container form
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+
+div.modal_container form p
+{
+	background: #d5d5d5;
+	border-radius: 10px;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-family: Abel;
+	font-size: 24px;
+	color: #101010;
+}
+
+div.modal_container form label
+{
+	font-size: 20px;
+	font-family: Abel;
+	background: #d5d5d5;
+	color: #101010;
+	padding: 2px 10px 2px 10px;
+	border-radius: 10px;
+}
+
+div.modal_container form div input[type='checkbox']
+{
+	width: 120px;
+}
+
+div.modal_container form div input[type='text'],
+div.modal_container form div input[type='textarea']
+{
+	width: 200px;
+	height: 20px;
+	background: #d5d5d5;
+	color: #101010;
+	border-radius: 10px;
+	font-family: Abel;
+	font-size: 20px;
+	outline: none;
+}
+
+div.modal_container form div input:hover
+{
+	background: #d5d5d5;
+	color: #101010;
+	transition-duration: 0.2s;
+}
+
+div.modal_container form div input::placeholder
+{
+	color: #101010;
+	font-style: italic;
+}
+
+div.modal_container form div input:focus::placeholder
+{
+	color: #d5d5d5;
+}
+
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:20%; opacity:1}
+  }
+
+  @keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:20%; opacity:1}
+  }
