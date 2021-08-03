@@ -1,0 +1,106 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('Abel-Regular.ttf');
+}
+
+html
+{
+	background-color: #e5e5e5;
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+section#login_form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#title
+{
+	font-family: Audiowibe;
+	font-size: 25px;
+	font-weight: normal;
+	text-align: center;
+	color: #e5e5e5;
+	background-color: #2e43b6;
+	border: solid 2px #252525;
+	border-radius: 15px;
+	margin-top: 10vh;
+	width: 320px;
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+	border-radius: 15px;
+	background-color: #252525;
+	margin-top: 14vh;
+	width: 320px;
+}
+
+form p
+{
+	font-family: Audiowibe;
+	font-size: 20px;
+	text-align: center;
+	color: #e5e5e5;
+	background-color: #2e43b6;
+}
+
+form input, form button
+{
+	font-family: Abel;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 15px;
+	transition-duration: 0.2s;
+}
+
+form input
+{
+	outline: none;
+	background-color: #e5e5e5;
+	border: solid 2px #252525;
+}
+
+form input::placeholder
+{
+	font-style: italic;
+}
+
+form input:focus, form input:hover
+{
+	border: solid 2px #2e43b6;
+	box-shadow: #2e43b6 0px 0px 30px;
+	transition-duration: 0.2s;
+}
+
+form button
+{
+	margin: 25px;
+	color: #e5e5e5;
+	background-color: #2e43b6;
+	border: solid 2px #2e43b6;
+}
+
+form button:hover
+{
+	color: #2e43b6;
+	background-color: #e5e5e5;
+	transition-duration: 0.2s;
+}

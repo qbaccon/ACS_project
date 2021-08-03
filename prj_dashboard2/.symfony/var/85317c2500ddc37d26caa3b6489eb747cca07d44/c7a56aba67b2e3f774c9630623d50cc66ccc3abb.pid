@@ -1,0 +1,15 @@
+{
+    "dir": "C:\\Users\\acs\\test-symphony\\test",
+    "watch": null,
+    "pid": 23156,
+    "port": 0,
+    "scheme": "",
+    "args": [
+        "C:\\laragon\\bin\\php\\php-7.2.19-Win32-VC15-x64\\php-cgi.exe",
+        "-b",
+        "52382",
+        "-d",
+        "error_log=C:\\Users\\acs\\.symfony\\log\\85317c2500ddc37d26caa3b6489eb747cca07d44.log"
+    ],
+    "name": "PHP-CGI"
+}

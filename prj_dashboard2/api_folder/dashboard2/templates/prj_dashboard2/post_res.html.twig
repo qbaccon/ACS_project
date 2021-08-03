@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="{{asset('style/prod_list.css')}}"/>
+		<meta http-equiv="X-UA-Compatible" content="TE-edge">
+		<meta name="viewport3" content="width=device-width, initial-scale=1.0">
+		<title>Historique d'achat</title>
+	</head>
+	<body>
+		<h1 id="title">Liste des produits achetés</h1>
+		{% for product in prod %}
+			<form method="post" action="list_prod/organizer">
+				<div class="product">
+					<div id="name">
+						<p>{{product.name}}</p>
+					</div>
+					<div id="ref">
+						<p>{{product.ref}}</p>
+					</div>
+					<div id="type">
+						<p>{{product.type}}</p>
+					</div>
+					<div id="place">
+						<p>{{product.place}}</p>
+					</div>
+					<div id="date_buy">
+						<p>{{product.date_buy}}</p>
+					</div>
+					<div id="date_end">
+						<p>{{product.date_end}}</p>
+					</div>
+					<div id="advices">
+						<p>{{product.advices}}</p>
+					</div>
+					<div id="price">
+						<p>{{product.price}} €</p>
+					</div>
+					<div id="read_me">
+						{% if product.read_me == 1 %}
+							<p>Oui</p>
+						{% else %}
+							<p>Non</p>
+						{% endif %}
+					</div>
+					<div id="remove">
+						<button type="submit" name="rm">Supprimer</button>
+						<input type="hidden" name="id" value="{{product.id}}"/>
+					</div>
+				</div>
+			</form>
+		{% endfor %}
+	</body>
+</html>
