@@ -1,1 +1,0 @@
-{"level":"warn","source":"server","source":"HTTP","error":"Passthru script \"/index.php\" does not exist under C:\\Users\\acs\\test-symphony\\: CreateFile C:\\Users\\acs\\test-symphony\\index.php: Le fichier spécifié est introuvable.","time":"2021-08-02T11:02:34+02:00","message":"unable to detect the front controller, disabling the PHP server"}
