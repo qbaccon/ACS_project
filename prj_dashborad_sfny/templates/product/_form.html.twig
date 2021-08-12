@@ -1,0 +1,20 @@
+{{ form_start(form) }}
+	{{ form_widget(form) }}
+    {# {{ form_row(form.name) }}
+	{{ form_row(form.ref) }}
+	{{ form_row(form.type) }}
+	{{ form_row(form.place) }}
+	{{ form_row(form.date_buy) }}
+	{{ form_row(form.date_end) }}
+	{{ form_row(form.price) }}
+	{{ form_row(form.advices) }}
+	{{ form_row(form.picture) }} #}
+	{# {{ form_widget(form.picture)}}
+	<label for="file-select">Choisir un fichier</label>
+	<select name="file-select" id="file-select">
+		{% for pctr in files %}
+			<option value="{{ pctr }}">{{ pctr }}</option>
+		{% endfor %}
+	</select> #}
+	<button class="btn">{{ button_label|default('Ajouter') }}</button>
+{{ form_end(form) }}

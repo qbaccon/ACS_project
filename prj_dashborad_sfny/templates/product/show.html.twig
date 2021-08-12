@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link href="{{ asset('style/show_prod.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}Details du produit{% endblock %}
+
+{% block body %}
+    <h1>Détail du produit {{ product.ref }}</h1>
+
+    <table class="table">
+        <tbody>
+            <!-- <tr>
+                <th>Id</th>
+                <td>{{ product.id }}</td>
+            </tr> -->
+            <tr>
+                <th>Nom: </th>
+                <td> {{ product.name }}</td>
+            </tr>
+            <tr>
+                <th>Référence: </th>
+                <td> {{ product.ref }}</td>
+            </tr>
+            <tr>
+                <th>Catégorie: </th>
+                <td> {{ product.type }}</td>
+            </tr>
+            <tr>
+                <th>Lieu d'achat: </th>
+                <td> {{ product.place }}</td>
+            </tr>
+            <tr>
+                <th>Date d'achat: </th>
+                <td> {{ product.dateBuy ? product.dateBuy|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Date de fin de garantie: </th>
+                <td> {{ product.dateEnd ? product.dateEnd|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Prix d'achat: </th>
+                <td> {{ product.price }}</td>
+            </tr>
+            <tr>
+                <th>Conseils d'entretient: </th>
+                <td> {{ product.advices }}</td>
+            </tr>
+			<tr>
+                <th>Nom de l'image: </th>
+                <td> {{ product.picture }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a id="return_link" href="{{ path('product_index') }}">Retour</a>
+
+	<div id="prod_action">
+		<a id="chg_link" href="{{ path('product_edit', {'id': product.id}) }}">Modifier</a>
+		{{ include('product/_delete_form.html.twig') }}
+	</div>
+{% endblock %}
+

@@ -1,0 +1,149 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('Abel-Regular.ttf');
+}
+
+html
+{
+	background-color: #e5e5e5;
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1
+{
+	font-size: 25px;
+	font-family: Audiowibe;
+	border: solid 5px #2e43b6;
+	border-radius: 12px;
+	margin-top: 5vh;
+	margin-bottom: 8vh;
+	padding: 5px 10px 5px 10px;
+}
+
+form
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #2e43b6;
+	border: solid 2px #252525;
+	border-radius: 12px;
+	padding: 24px 48px 24px 48px;
+}
+
+form div#product1
+{	
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+form div#product1 div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+form div#product1 div#product1_date_buy,
+form div#product1 div#product1_date_end
+{
+	flex-direction: row;
+	gap: 10px;
+}
+
+form label
+{
+	font-family: Audiowibe;
+	font-size: 20px;
+}
+
+form input, form select
+{
+	font-family: Abel;
+	font-size: 18px;
+	border-radius: 10px;
+	border: solid 2px #e5e5e5;
+	background-color: #d2d2d280;
+	outline: none;
+}
+
+form input:focus, form input:hover,
+form select:focus, form select:hover
+{
+	
+	animation: ignite 0.8s infinite alternate;
+}
+
+@keyframes ignite
+{
+	0%
+	{
+		box-shadow: 0px 0px 0px #e5e5e5;
+	}
+	100%
+	{
+		box-shadow: 0px 0px 15px #e5e5e5;
+	}
+}
+
+form button
+{
+	font-family: Audiowibe;
+	font-size: 20px;
+	border: solid 3px #e5e5e5;
+	border-radius: 8px;
+	padding: 5px;
+	color: #e5e5e5;
+	background-color: #252525;
+	text-decoration: none;
+	margin-top: 20px;
+	transition-duration: 0.18s;
+}
+
+form button:hover
+{
+	color: #2e43b6;
+	background-color: #e5e5e5;
+	border-color: #2e43b6;
+}
+
+a
+{
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	padding: 8px 8px 8px 8px;
+	font-family: Audiowibe;
+	font-size: 24px;
+	color: #252525;
+	border: solid 3px #2e43b6;
+	border-radius: 0px 0px 10px 0px;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+a:hover
+{
+	color: #e5e5e5;
+	background-color: #252525;
+	transition-duration: 0.18s;
+}

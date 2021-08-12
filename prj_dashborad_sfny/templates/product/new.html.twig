@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+<link href="{{ asset('style/new_prod.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}Nouveau produit{% endblock %}
+
+{% block body %}
+    <h1>Ajouter un produit</h1>
+
+    {{ include('product/_form.html.twig') }}
+
+    <a href="{{ path('product_index') }}">Retour</a>
+{% endblock %}

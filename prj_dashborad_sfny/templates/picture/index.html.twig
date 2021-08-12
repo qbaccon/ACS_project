@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link href="{{ asset('style/pctr_dspl.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}Liste images{% endblock %}
+
+{% block body %}
+
+<a href="{{ path('product_index') }}">Retour</a>
+<h1>Liste des images en ligne</h1>
+<div id="master_container">
+	{% for file in pictures %}
+		{% if file != '.' and file != '..' %}
+			<div class="pctr_box">
+				<form action="del" method="post">
+					<input type="hidden" value="{{ file }}" name="file_name"/> 
+					<p>
+						Nom de l'image: </br>
+						{{ file }}
+					</p>
+					<img src="{{ asset('uploads/' ~ file) }}" width="200px" height="200px"/>
+					<button type="submit" name="del">Supprimer</button>
+				</form>
+			</div>
+		{% endif %}
+	{% endfor %}
+	{% if pictures == "empty" %}
+		<p id="empty">Aucune image en ligne</p>
+	{% endif %}
+</div>
+{% endblock %}

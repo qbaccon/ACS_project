@@ -1,0 +1,76 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link href="{{ asset('style/list.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}Liste des produits{% endblock %}
+
+{% block body %}
+    <h1>Listes des produits achetés</h1>
+	<a id="logout" href="{{ path('app_logout') }}">Deconnexion</a>
+	<div id="mastercontainer">
+		<form id="search_form" action="{{ path('product_index') }}" method="post">
+			<div>
+				<label for="search_field">Recherche par catégorie:</label>
+				<input type="text" id="search_field" name="search_field" autocomplete="off">
+			</div>
+			<button type="submit" id="btn_search" name="btn_search">&#128269</button>
+		</form>
+		<table class="table">
+			<thead>
+				<tr>
+					<!-- <th>Id</th> -->
+					<th>Nom</th>
+					<th>Référence</th>
+					<th>Catégorie</th>
+					<th>Lieu d'achat</th>
+					<th>Date d'achat</th>
+					<th>Fin de garantit</th>
+					<th>Prix d'achat</th>
+					<th>Conseils d'entretient</th>
+					<th>Nom de l'image</th>
+					<!-- <th>actions</th> -->
+				</tr>
+			</thead>
+			<tbody>
+			{% for product in products %}
+				<tr>
+					<!-- <td>{{ product.id }}</td> -->
+					<td>{{ product.name }}</td>
+					<td>{{ product.ref }}</td>
+					<td>{{ product.type }}</td>
+					<td>{{ product.place }}</td>
+					<td>{{ product.dateBuy ? product.dateBuy|date('d-m-Y') : '' }}</td>
+					<td>{{ product.dateEnd ? product.dateEnd|date('d-m-Y') : '' }}</td>
+					<td>{{ product.price }} €</td>
+					<td>{{ product.advices }}</td>
+					<td><a href="{{ asset('uploads/' ~ product.picture) }}" onclick="window.open(this.href); return false;">{{ product.picture }}</a></td>
+					<td>
+						<a href="{{ path('product_show', {'id': product.id}) }}">Voir</a>
+						<span>-</span>
+						<a href="{{ path('product_edit', {'id': product.id}) }}">Modifier</a>
+					</td>
+				</tr>
+			{% else %}
+				<tr>
+					<td colspan="11">Aucun produit trouvé</td>
+				</tr>
+			{% endfor %}
+			</tbody>
+		</table>
+		<div id="link">
+			<a id="new" href="{{ path('product_new') }}">Ajouter un produit</a>
+			<a id="to_pctrs" href="{{ path('picture_index') }}">Voir les images stockées</a>
+		</div>
+		<form id="upp_form" action="{{ path('do-upload') }}" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="token" value="{{ csrf_token('upload') }}" />
+			<div>
+				<label for="myfile">Fichier à envoyer:</label>
+				<input type="file" name="myfile" id="myfile" required>
+			</div>
+			<button type="submit">Envoyer</button>
+		</form>
+		{# <a id="show_pctr" href="{{ path('pctr_show') }}">Voir les images en ligne</a> #}
+	</div>
+{% endblock %}

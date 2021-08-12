@@ -1,0 +1,237 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('Abel-Regular.ttf');
+}
+
+html
+{
+	background-color: #e5e5e5;
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1
+{
+	font-size: 25px;
+	font-family: Audiowibe;
+	border: solid 5px #2e43b6;
+	border-radius: 12px;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	padding: 5px 10px 5px 10px;
+}
+
+div#mastercontainer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #252525a0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+}
+
+form#search_form
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 25px;
+	background-color: #2e43b6;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	padding: 12px;
+	margin-bottom: 30px;
+}
+
+form#search_form div
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5px;
+}
+
+form#search_form div label,
+form#search_form div input
+{
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+}
+
+form#search_form div input,
+form#search_form button
+{
+	outline: none;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	background-color: #252525;
+}
+
+form#search_form button
+{
+	border-radius: 50%;
+	transition-duration: 0.18s;
+}
+
+form#search_form div input:focus
+{
+	animation: ignite 0.8s infinite alternate;
+}
+
+@keyframes ignite
+{
+	0%
+	{
+		box-shadow: 0px 0px 0px #e5e5e5;
+	}
+	100%
+	{
+		box-shadow: 0px 0px 25px #e5e5e5;
+	}
+}
+
+form#search_form button:hover
+{
+	box-shadow: 0px 0px 15px #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+table
+{
+	font-family: Abel;
+	font-size: 20px;
+}
+
+table th, table td
+{
+	text-align: center;
+	color: #e5e5e5;
+	border: solid 2px #e5e5e5;
+	padding: 5px;
+}
+
+table th
+{
+	background-color: #2e43b6;
+}
+
+table td
+{
+	background-color: #252525;
+}
+
+table a
+{
+	border: solid 1px #3c54db;
+	border-radius: 5px;
+	padding: 1px 3px 1px 3px;
+	color: #e5e5e5;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+table a:hover,
+a#new:hover,
+a#to_pctrs:hover,
+#upp_form button:hover
+{
+	color: #3c54db;
+	background-color: #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+div#link
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 40px;
+}
+
+a#new, a#to_pctrs
+{
+	font-family: Audiowibe;
+	font-size: 20px;
+	border: solid 3px #2e43b6;
+	border-radius: 8px;
+	padding: 5px;
+	color: #e5e5e5;
+	background-color: #252525;
+	text-decoration: none;
+	margin-top: 40px;
+	transition-duration: 0.18s;
+}
+
+#upp_form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#upp_form input,
+#upp_form label,
+#upp_form button
+{
+	font-size: 20px;
+	font-family: Audiowibe;
+	border: solid 3px #2e43b6;
+	border-radius: 8px;
+	padding: 5px;
+	color: #e5e5e5;
+	background-color: #252525;
+	text-decoration: none;
+	margin-top: 20px;
+	transition-duration: 0.18s;
+}
+
+#upp_form #myfile
+{
+	width: 390px;
+}
+
+#upp_form button
+{
+	margin-top: 10px;
+}
+
+a#logout
+{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	font-size: 20px;
+	font-family: Audiowibe;
+	color: #252525;
+	border: solid 3px #2e43b6;
+	border-radius: 0px 0px 8px 0px;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+a#logout:hover
+{
+	color: #e5e5e5;
+	background-color: #252525;
+}
