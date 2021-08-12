@@ -1,9 +1,0 @@
-{
-    "dir": "C:\\Users\\acs\\test-symphony",
-    "watch": null,
-    "pid": 10192,
-    "port": 8000,
-    "scheme": "http",
-    "args": null,
-    "name": "Web Server"
-}
