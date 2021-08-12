@@ -45,7 +45,8 @@
 					<td>{{ product.dateEnd ? product.dateEnd|date('d-m-Y') : '' }}</td>
 					<td>{{ product.price }} €</td>
 					<td>{{ product.advices }}</td>
-					<td><a href="{{ asset('uploads/' ~ product.picture) }}" onclick="window.open(this.href); return false;">{{ product.picture }}</a></td>
+					<!-- <td><a href="{{ asset('uploads/' ~ product.picture) }}" onclick="window.open(this.href); return false;">{{ product.picture }}</a></td> -->
+					<td><a href="{{ path('picture_show', {'ref': product.ref, 'name': product.picture}) }}" onclick="window.open(this.href); return false;">{{ product.picture }}</a></td>
 					<td>
 						<a href="{{ path('product_show', {'id': product.id}) }}">Voir</a>
 						<span>-</span>

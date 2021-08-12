@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	<link href="{{ asset('style/show_prod_pctr.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}Liste images{% endblock %}
+
+{% block body %}
+	<h1>Image du produit {{ ref }}</h1>
+	<div id="master_container">
+		{% if picture != 'empty' %}
+			<img src="{{ asset('uploads/' ~ picture) }}"/>
+			<p>Nom de l'image: {{ picture }}</p>
+		{% else %}
+			<p id="warning">L'image choisie est introuvable</p>
+		{% endif %}
+	</div>
+{% endblock %}
