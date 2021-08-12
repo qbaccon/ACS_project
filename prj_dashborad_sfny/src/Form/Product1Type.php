@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 
@@ -24,7 +25,7 @@ class Product1Type extends AbstractType
             ->add('date_end', DateType::class, ['label' => "Fin garantie",
 												'format' => 'ddMMyyyy'])
             ->add('price', IntegerType::class, ['label' => 'Prix'])
-            ->add('advices', TextType::class, ['label' => "Conseil(s)"])
+            ->add('advices', TextareaType::class, ['label' => "Conseil(s)"])
             ->add('picture', TextType::class, ['label' => 'Image ticket'])
         ;
     }
