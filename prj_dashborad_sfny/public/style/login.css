@@ -31,11 +31,28 @@ h1
 {
 	font-size: 25px;
 	font-family: Audiowibe;
+	text-align: center;
 	border: solid 5px #2e43b6;
 	border-radius: 12px;
-	margin-top: 25vh;
+	margin-top: 22vh;
 	margin-bottom: 8vh;
 	padding: 5px 10px 5px 10px;
+}
+
+@media (max-width:576px)
+{
+	h1
+	{
+		margin-top: 17vh;
+	}
+}
+
+@media (max-width:360px)
+{
+	h1
+	{
+		margin-top: 11vh;
+	}
 }
 
 form
@@ -46,19 +63,21 @@ form
 	padding: 24px 48px 24px 48px;
 }
 
+form label, form button, form p
+{
+	font-size: 22px;
+	font-family: Audiowibe;
+}
+
 form p
 {
+	font-size: 20px;
+	font-family: Abel;
 	background-color: #e5e5e5;
 	color: #a81515;
 	border: solid 3px #a81515;
 	border-radius: 12px;
 	padding: 5px;
-}
-
-form label, form button, form p
-{
-	font-size: 22px;
-	font-family: Audiowibe;
 }
 
 form input
