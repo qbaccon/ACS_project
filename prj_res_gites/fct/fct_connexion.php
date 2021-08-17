@@ -2,6 +2,7 @@
 require_once("class_users.php");
 require_once("db_con.php");
 
+$db = get_db();
 $query = $db->query("SELECT login, mdp FROM users");
 $res = $query->fetchAll();
 if (isset($_POST['btn']))

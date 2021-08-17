@@ -1,5 +1,6 @@
 <?php
 require_once("db_con.php");
+$db = get_db();
 $sql ="SELECT id, title, pctrs_link, dispo FROM liste_gites ";
 $query = $db->prepare($sql);
 //execution de la query

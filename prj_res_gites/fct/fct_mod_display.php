@@ -1,5 +1,6 @@
 <?php
 require_once("fct/db_con.php");
+$db = get_db();
 $sql ="SELECT id, type, title, purpose, pctrs_link, nb_bed, nb_bath, geoloc, price, dispo FROM liste_gites ";
 $query = $db->prepare($sql);
 $query->execute();

@@ -56,6 +56,7 @@ function display($res)
 	}
 }
 
+$db = get_db();
 $query = $db->query("SELECT * FROM liste_gites");
 if ($query != 'false')
 {
