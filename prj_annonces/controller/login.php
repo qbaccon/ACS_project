@@ -11,7 +11,12 @@ if (isset($_POST['login']))
 		foreach($query as $key => $value)
 		{
 			if ($value['mail'] == $_POST['mail'] && $value['password'] == $_POST['psw'])
+			{
+				session_start();
+				$_SESSION['connected'] = "y";
+				$_SESSION['who'] = $_POST['mail'];
 				header('Location: ../index.php');
+			}	
 		}
 		echo "Utilisateur inconnu";
 	}

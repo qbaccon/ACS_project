@@ -8,10 +8,10 @@
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
 		<title>Annonces - accueil</title>	
 	</head>
+	<header>
+		<?php include "view/header.php" ?>
+	</header>
 	<body>
-		<div>
-			<a href="view/log_page.php">Connexion</a>
-		</div>
 		<h1>Toutes les annonces</h1>
 	</body>
 </html>
