@@ -14,8 +14,14 @@
 			<form action="log_page.php" method="post">
 				<?php include "../controller/register.php" ?>
 				<?php include "../controller/login.php" ?>
-				<input type="email" name="mail" required/>
-				<input type="password" name="psw" required/>
+				<div>
+					<label for="mail">Email</label>
+					<input type="email" name="mail" required/>
+				</div>
+				<div>
+					<label for="psw">Mot de passe</label>
+					<input type="password" name="psw" required/>
+				</div>	
 				<input type="submit" name="login" value="Connexion"/>
 			</form>
 			<button onclick="toggle_modal()">Pas de compte ? Inscrivez-vous</button>
@@ -27,8 +33,8 @@
 					<input type="text" name="name_r" required/>
 					<input type="password" name="psw_r" required/>
 					<input type="submit" name="register" value="S'inscrire"/>
+					<button onclick="toggle_modal()">Retour</button>
 				</form>
-				<button onclick="toggle_modal()">Retour</button>
 			</div>
 		</section>
 	</body>

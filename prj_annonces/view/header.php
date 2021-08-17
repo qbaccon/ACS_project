@@ -4,7 +4,7 @@ session_start();
 if (isset($_SESSION['connected']))
 {
 	echo "<div>";
-	echo "<a href='view/log_page.php'>Gérer mes annonces</a>";
+	echo "<a href='view/annonce_organizer.php'>Gérer mes annonces</a>";
 	echo "<a href='controller/logout.php'>Déconnexion</a>";
 	echo "</div>";
 }
