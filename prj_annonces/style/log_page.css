@@ -1,0 +1,26 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('../style/Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('../style/Abel-Regular.ttf');
+}
+
+html
+{
+	background-color: #e5e5e5;
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+div#modal
+{
+	display: none;
+}
