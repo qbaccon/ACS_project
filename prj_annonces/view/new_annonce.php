@@ -1,4 +1,4 @@
-<?php include "../model/ao_fct.php" ?>
+<?php require_once "../model/ao_fct.php" ?>
 
 <!DOCTYPE html>
 <html lang="fr">
