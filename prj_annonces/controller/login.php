@@ -19,8 +19,8 @@ if (isset($_POST['login']))
 				header('Location: ../index.php');
 			}	
 		}
-		echo "Utilisateur inconnu";
+		echo "<p>Utilisateur inconnu</p>";
 	}
 	else
-		echo "Utilisateur inconnu";
+		echo "<p>Utilisateur inconnu</p>";
 }

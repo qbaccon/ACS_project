@@ -1,3 +1,5 @@
+<?php include "../model/ao_fct.php" ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -11,9 +13,11 @@
 	<body>
 		<section id="display">
 			<h1>Mes annonces</h1>
-			<div id="annonce_box">
+			<div id="main_container">
 				<?php include "../controller/annonce_dspl.php" ?>
 			</div>
+			<a href="new_annonce.php">Ajouter annonce</a>
 		</section>
 	</body>
+	<script src="../script/organizer.js"></script>
 </html>

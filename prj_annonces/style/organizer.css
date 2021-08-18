@@ -1,0 +1,211 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('../style/Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('../style/Abel-Regular.ttf');
+}
+
+html
+{
+	background-color: #e5e5e5;
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+section#display
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 6vh;
+}
+
+h1
+{
+	font-size: 24px;
+	font-family: Audiowibe;
+	border: solid 3px #2e43b6;
+	border-radius: 10px;
+	margin-bottom: 6vh;
+	padding: 5px 10px 5px 10px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+div#main_container
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 30px;
+	background-color: #252525a0;
+	width: 100%;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+}
+
+div.annonce_box
+{
+	display: grid;
+	grid-template-rows: auto 200px auto auto auto auto;
+	grid-template-columns: auto auto;
+	background-color: #2e43b6;
+	border: solid 2px #252525;
+	border-radius: 12px;
+	padding: 10px;
+	width: 320px;
+}
+
+div.annonce_box div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div.annonce_box div input,
+div.annonce_box div textarea
+{
+	font-size: 18px;
+	font-family: Abel;
+	text-align: center;
+}
+
+div.annonce_box div label
+{
+	font-size: 20px;
+	font-family: Abel;
+}
+
+div.annonce_box div input
+{
+	width: 85%;
+}
+
+div.annonce_box div textarea
+{
+	width: 85%;
+	height: 90%;
+	resize: none;
+}
+
+div.annonce_box div.pctr
+{
+	grid-row-start: 2;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+div.annonce_box div.title
+{
+	grid-row-start: 3;
+	grid-column-start: 1;
+}
+
+div.annonce_box div.pctr_name
+{
+	grid-row-start: 3;
+	grid-column-start: 2;
+}
+
+div.annonce_box div.type
+{
+	grid-row-start: 4;
+}
+
+div.annonce_box div.place
+{
+	grid-row-start: 4;
+	grid-column-start: 2;
+}
+
+div.annonce_box div.price
+{
+	grid-row-start: 5;
+	grid-column-start: 2;
+}
+
+div.annonce_box div.publish
+{
+	grid-row-start: 6;
+	grid-column-start: 2;
+}
+
+div.annonce_box div.purpose
+{
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+
+div.annonce_box div.chg,
+div.annonce_box div.enbl
+{
+	grid-row-start: 1;
+	margin-bottom: 8px;
+}
+
+div.annonce_box div.del
+{
+	grid-row-start: 1;
+	grid-column-start: 2;
+}
+
+div.annonce_box div.chg
+{
+	display: none;
+}
+
+div.annonce_box div button
+{
+	font-size: 18px;
+	font-family: Abel;
+	border: solid 2px #e5e5e5;
+	border-radius: 8px;
+	background-color: #e5e5e57a;
+	transition-duration: 0.18s;
+}
+
+div.annonce_box div button:hover
+{
+	background-color: #2e43b6;
+	color: #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+div#main_container p,
+section#display a
+{
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+}
+
+section#display a
+{
+	background-color: #252525a0;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	padding: 1px 6px 1px 6px;
+	margin: 1em;
+	transition-duration: 0.18s;
+}
+
+section#display a:hover
+{
+	border-color: #2e43b6;
+	color: #252525;
+	background-color: #e5e5e5;
+	transition-duration: 0.18s;
+}

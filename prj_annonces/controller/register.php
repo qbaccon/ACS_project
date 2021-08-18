@@ -14,13 +14,13 @@ if (isset($_POST['register']))
 		{
 			if ($value[$key] == $_POST['mail_r'])
 			{
-				$ckeck = 0;
-				echo "Email déjà utilisé";
+				$check = 0;
+				echo "<p id='warn_mess'>Email déjà utilisé</p>";
 				break;
 			}
 		}
 	}
-	if ($check == 0)
+	if ($check == 1)
 		$pdo->query("INSERT INTO user VALUES (DEFAULT, '".$_POST['name_r']."', 
 		'".$_POST['mail_r']."', '".$_POST['psw_r']."')");
 }
