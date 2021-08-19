@@ -1,4 +1,7 @@
-<?php require_once "../model/ao_fct.php" ?>
+<?php
+session_start();
+require_once "../model/ao_fct.php"
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,16 +27,17 @@
 				</div>
 				<div class="item">
 					<label for='pctr'>Nom de l'image</label>
-					<input type="text" name="pctr" autocomplete="off" required/>
+					<!-- <input type="text" name="pctr" autocomplete="off" required/> -->
+					<?php include "select_maker_add.php" ?>
 				</div>
 				<div class="item">
 					<label for='purpose'>Description</label>
 					<input type="textarea" name="purpose" autocomplete="off" required/>
 				</div>
-				<div class="item">
+				<!-- <div class="item">
 					<label for='publish'>Date de publication</label>
 					<input type="date" name="publish" required/>
-				</div>
+				</div> -->
 				<div class="item">
 					<label for='price'>Prix (€)</label>
 					<input type="number" name="price" min="0" autocomplete="off" required/>

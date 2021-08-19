@@ -97,13 +97,16 @@ div.annonce_box div
 }
 
 div.annonce_box div input,
-div.annonce_box div textarea
+div.annonce_box div textarea,
+div.annonce_box div select
 {
 	font-size: 18px;
 	font-family: Abel;
+	border: solid 2px #e5e5e5;
 	border-radius: 8px;
 	background-color: #e5e5e57a;
 	text-align: center;
+	outline: none;
 }
 
 div.annonce_box div label
@@ -112,9 +115,15 @@ div.annonce_box div label
 	font-family: Abel;
 }
 
-div.annonce_box div input
+div.annonce_box div input,
+div.annonce_box div select
 {
 	width: 85%;
+}
+
+div.annonce_box div select
+{
+	border-width: 2px;
 }
 
 div.annonce_box div textarea

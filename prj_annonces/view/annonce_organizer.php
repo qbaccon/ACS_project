@@ -1,4 +1,7 @@
-<?php require_once "../model/ao_fct.php" ?>
+<?php 
+session_start();
+require_once "../model/ao_fct.php"
+?>
 
 <!DOCTYPE html>
 <html lang="fr">

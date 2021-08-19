@@ -67,7 +67,8 @@ section#add_form form div.item
 	font-family: Abel;
 }
 
-section#add_form form div.item input
+section#add_form form div.item input,
+section#add_form form div.item select
 {
 	font-size: 18px;
 	border: solid 2px #e5e5e5;
@@ -77,13 +78,15 @@ section#add_form form div.item input
 	transition-duration: 0.18s;
 }
 
-section#add_form form div.item input:hover
+section#add_form form div.item input:hover,
+section#add_form form div.item select:hover
 {
 	box-shadow: 0px 0px 12px #e5e5e5;
 	transition-duration: 0.18s;
 }
 
-section#add_form form div.item input:focus
+section#add_form form div.item input:focus,
+section#add_form form div.item select:focus
 {
 	animation: twinkle 0.8s infinite alternate;
 }
