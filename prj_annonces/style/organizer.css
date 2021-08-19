@@ -89,6 +89,14 @@ div.annonce_box
 	width: 320px;
 }
 
+@media (max-width: 355px)
+{
+	div.annonce_box
+	{
+		width: 295px;
+	}
+}
+
 div.annonce_box div
 {
 	display: flex;

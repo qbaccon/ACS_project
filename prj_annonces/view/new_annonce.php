@@ -15,8 +15,8 @@ require_once "../model/ao_fct.php"
 	</head>
 	<body>
 		<section id="add_form">
-			<h1>Veuillez remplir tout les champs</h1>
-			<form action="new_annonce.php" method="post">
+			<h1>Veuillez remplir tous les champs</h1>
+			<form action="new_annonce.php" method="post" enctype="multipart/form-data">
 				<div class="item">
 					<label for='title'>Titre</label>
 					<input type="text" name="title" autocomplete="off" required/>
@@ -26,9 +26,9 @@ require_once "../model/ao_fct.php"
 					<input type="text" name="type" autocomplete="off" required/>
 				</div>
 				<div class="item">
-					<label for='pctr'>Nom de l'image</label>
-					<!-- <input type="text" name="pctr" autocomplete="off" required/> -->
-					<?php include "select_maker_add.php" ?>
+					<label for='pctr_name'>Nom de l'image</label>
+					<!-- <?php include "select_maker_add.php" ?> -->
+					<input type="file" name="pctr_name"/>
 				</div>
 				<div class="item">
 					<label for='purpose'>Description</label>
