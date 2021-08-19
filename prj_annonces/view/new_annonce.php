@@ -14,28 +14,35 @@
 		<section id="add_form">
 			<h1>Veuillez remplir tout les champs</h1>
 			<form action="new_annonce.php" method="post">
-				<div>
-					<input type="text" name="title" placeholder="Titre" autocomplete="off" required/>
+				<div class="item">
+					<label for='title'>Titre</label>
+					<input type="text" name="title" autocomplete="off" required/>
 				</div>
-				<div>
-					<input type="text" name="type" placeholder="Catégorie" autocomplete="off" required/>
+				<div class="item">
+					<label for='type'>Catégorie</label>
+					<input type="text" name="type" autocomplete="off" required/>
 				</div>
-				<div>
-					<input type="text" name="pctr" placeholder="Nom de l'image" autocomplete="off" required/>
+				<div class="item">
+					<label for='pctr'>Nom de l'image</label>
+					<input type="text" name="pctr" autocomplete="off" required/>
 				</div>
-				<div>
-					<input type="textarea" name="purpose" placeholder="Description" autocomplete="off" required/>
+				<div class="item">
+					<label for='purpose'>Description</label>
+					<input type="textarea" name="purpose" autocomplete="off" required/>
 				</div>
-				<div>
+				<div class="item">
+					<label for='publish'>Date de publication</label>
 					<input type="date" name="publish" required/>
 				</div>
-				<div>
+				<div class="item">
+					<label for='price'>Prix (€)</label>
 					<input type="number" name="price" min="0" autocomplete="off" required/>
 				</div>
-				<div>
-					<input type="text" name="place" placeholder="Adresse" autocomplete="off" required/>
+				<div class="item">
+					<label for='place'>Adresse</label>
+					<input type="text" name="place" autocomplete="off" required/>
 				</div>
-				<div>
+				<div class="btn">
 					<button type="submit" name="new">Ajouter</button>
 					<a href="annonce_organizer.php">Retour</a>
 				</div>

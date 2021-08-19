@@ -11,6 +11,7 @@
 		<title>Annonces - Mes annonces</title>	
 	</head>
 	<body>
+		<a id="back" href="../index.php">Retour</a>
 		<section id="display">
 			<h1>Mes annonces</h1>
 			<div id="main_container">
