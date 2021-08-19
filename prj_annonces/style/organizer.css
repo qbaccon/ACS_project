@@ -225,6 +225,11 @@ div.annonce_box div button:hover
 	transition-duration: 0.18s;
 }
 
+div#link
+{
+	margin-top: 4vh;
+}
+
 div#main_container p,
 section#display a
 {

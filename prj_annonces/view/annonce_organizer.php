@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once "../model/ao_fct.php"
+require_once "../model/ao_fct.php";
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,10 @@ require_once "../model/ao_fct.php"
 			<div id="main_container">
 				<?php include "../controller/annonce_dspl.php" ?>
 			</div>
-			<a href="new_annonce.php">Ajouter annonce</a>
+			<div id="link">
+				<a href="new_annonce.php">Ajouter annonce</a>
+				<a href="pctr_dspl.php">Gérer la galerie</a>
+			</div>
 		</section>
 	</body>
 	<script src="../script/organizer.js"></script>

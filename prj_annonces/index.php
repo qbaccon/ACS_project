@@ -13,5 +13,8 @@
 	</header>
 	<body>
 		<h1>Toutes les annonces</h1>
+		<section id="annonce">
+			<?php include "view/annonce_dspl_full.php" ?>
+		</section>
 	</body>
 </html>
