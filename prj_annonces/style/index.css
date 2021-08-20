@@ -15,3 +15,116 @@ html, body
 	margin: 0px;
 }
 
+h1
+{
+	font-size: 24px;
+	font-family: Audiowibe;
+	text-align: center;
+	border: solid 3px #2e43b6;
+	border-radius: 10px;
+	margin-top: 6vh;
+	margin-bottom: 8vh;
+	padding: 5px 10px 5px 10px;
+}
+
+section#annonce
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div#master_container,
+div#master_container div.annonce_box
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+div#master_container div.pctr
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-size: cover;
+	border-radius: 10px 0px 0px 10px;
+	width: 200px;
+	height: 250px;
+}
+
+div#master_container div.pctr p
+{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-family: Abel;
+	color: #e5e5e5;
+	background-color: #2e43b6a0;
+	border-radius: 10px 0px 0px 10px;
+	margin: 0px;
+}
+
+div#master_container div.details
+{
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 80px 80px;
+	background-color: #2e43b6;
+	border-radius: 0px 10px 10px 0px;
+	height: 250px;
+}
+
+div#master_container div.details div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+div#master_container div.details div p
+{
+	font-family: Abel;
+	margin: 0px;
+}
+
+div.details p.label
+{
+	font-size: 20px;
+	color: #e5e5e5;
+}
+
+div.details p.value
+{
+	font-size: 18px;
+	color: #c5c5c5;
+}
+
+div.details div#type
+{
+	grid-row-start: 1;
+	grid-column-start: 1;
+}
+
+div.details div#price
+{
+	grid-row-start: 1;
+	grid-column-start: 2;
+}
+
+div.details div#place
+{
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+div.details div#purpose
+{
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -12,9 +16,11 @@
 		<?php include "view/header.php" ?>
 	</header>
 	<body>
-		<h1>Toutes les annonces</h1>
 		<section id="annonce">
-			<?php include "view/annonce_dspl_full.php" ?>
+			<h1>Toutes les annonces</h1>
+			<div id="master_container">
+				<?php include "view/annonce_dspl_full.php" ?>
+			</div>
 		</section>
 	</body>
 </html>
