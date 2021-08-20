@@ -28,3 +28,5 @@ foreach($annonce as $key => $value)
 	echo "</div>";
 	echo "</div>";
 }
+if (empty($annonce))
+	echo "<p id='empty_msg'>Aucune annonce trouvé</p>";

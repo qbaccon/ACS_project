@@ -23,4 +23,9 @@ session_start();
 			</div>
 		</section>
 	</body>
+	<footer>
+		<div>
+			<p>&copyCopyright Quentin BACCON</p>
+		</div>
+	</footer>
 </html>
