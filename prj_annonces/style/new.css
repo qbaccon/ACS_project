@@ -31,6 +31,7 @@ h1
 {
 	font-size: 24px;
 	font-family: Audiowibe;
+	text-align: center;
 	border: solid 3px #2e43b6;
 	border-radius: 10px;
 	margin-top: 8vh;
@@ -76,6 +77,24 @@ section#add_form form div.item select
 	background-color: #e5e5e57a;
 	outline: none;
 	transition-duration: 0.18s;
+}
+
+@media (max-width: 420px)
+{
+	section#add_form form div.item input,
+	section#add_form form div.item select
+	{
+		width: 300px;
+	}
+}
+
+@media (max-width: 360px)
+{
+	section#add_form form div.item input,
+	section#add_form form div.item select
+	{
+		width: 270px;
+	}
 }
 
 section#add_form form div.item input:hover,
