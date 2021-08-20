@@ -1,7 +1,7 @@
 <?php 
 session_start();
 include "../model/get_user_pctr.php";
-include "../model/pctr_del_fct.php";
+include "../model/pctr_fct.php";
 ?>
 
 <!DOCTYPE html>
@@ -21,8 +21,9 @@ include "../model/pctr_del_fct.php";
 			<?php include "pctr_dspl_ex.php" ?>
 		</div>
 		<div id="pctr_btn">
-			<form action="pctr_dspl.php" method="post">
-				<input type="file" name="pctr_name"/>
+			<form action="pctr_dspl.php" method="post" enctype="multipart/form-data">
+				<input type="file" name="pctr_name" required/>
+				<input type="submit" name="send_pctr" value="Envoyer"/>
 			</form>	
 		</div>
 	</body>

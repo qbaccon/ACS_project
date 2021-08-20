@@ -1,10 +1,9 @@
 <?php
 
 require_once ("get_db.php");
-require_once ("get_pctr.php");
+require_once ("../model/get_user_pctr.php");
 // session_start();
 $pdo = get_db();
-$files = get_pctr();
 // $user = $pdo->query("SELECT id, pseudo, mail, password FROM user WHERE mail = '".$_SESSION['who']."'");
 // $user = $user->fetch();
 // $annonce = $pdo->query("SELECT id, id_user, title, type, pctr, purpose, price, publish, place FROM annonce WHERE id_user = '".$user['id']."'");
@@ -33,13 +32,12 @@ if (!empty($annonce))
 		echo "</div>";
 		echo "<div class='pctr_name'>";
 		echo "<label for='pctr_name'>Nom de l'image</label>";
-		// echo "<input id='a".$value['ann_id']."' type='text' value='". $value['pctr']."' name='pctr_name' disabled></input>";
 		echo "<select id='a".$value['ann_id']."' name='pctr_name' disabled>";
 		echo "<option value='".$value['pctr']."'>" . $value['pctr'] . "</option>";
-		foreach ($files as $item)
+		foreach ($picture as $key_p => $value_p)
 		{
-			if ($item != '.' && $item != '..' && $item != $value['pctr'])
-				echo "<option value='".$item."'> $item </option>";
+			if ($value_p['name'] != $value['pctr'])
+			echo "<option value='".$value_p['name']."'> ".$value_p['name']." </option>";
 		}
 		echo "</select>";
 		echo "</div>";
