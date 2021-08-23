@@ -10,7 +10,7 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style/index.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - accueil</title>	
+		<title>Annonces - Accueil</title>	
 	</head>
 	<header>
 		<?php include "view/header.php" ?>
@@ -20,6 +20,9 @@ session_start();
 			<h1>Toutes les annonces</h1>
 			<div id="master_container">
 				<?php include "view/annonce_dspl_full.php" ?>
+			</div>
+			<div id="page_link">
+				<?php include "view/page_up_down.php" ?>
 			</div>
 		</section>
 	</body>

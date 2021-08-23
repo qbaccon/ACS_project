@@ -22,7 +22,6 @@ html, body
 
 header
 {
-	position: fixed;
 	background-color: #2e43b6;
 	width: 100%;
 }
@@ -57,8 +56,8 @@ h1
 	text-align: center;
 	border: solid 3px #2e43b6;
 	border-radius: 10px;
-	margin-top: 12vh;
-	margin-bottom: 8vh;
+	margin-top: 4vh;
+	margin-bottom: 6vh;
 	padding: 5px 10px 5px 10px;
 }
 
@@ -71,10 +70,12 @@ section#annonce
 
 div#master_container
 {
+	flex-wrap: wrap;
 	background-color: #252525a0;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	width: 100%;
+	gap: 42px;
 }
 
 div#master_container,
@@ -179,9 +180,47 @@ p#empty_msg
 	color: #e5e5e5;
 }
 
+div#page_link
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 18px;
+}
+
+div#page_link a,
+div#page_link p
+{
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+	background-color: #252525a0;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	padding: 1px 6px 1px 6px;
+	margin: 10px;
+	margin-bottom: 1em;
+	transition-duration: 0.18s;
+}
+
+div#page_link a.page_num,
+div#page_link p.page_num
+{
+	margin: 10px 3px 1em 3px;
+}
+
+div#page_link a:hover
+{
+	border-color: #2e43b6;
+	color: #252525;
+	background-color: #e5e5e5;
+	transition-duration: 0.18s;
+}
+
 footer
 {
-	position: absolute;
+	position: relative;
 	background-color: #2e43b6;
 	bottom: 0px;
 	width: 100%;
