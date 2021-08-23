@@ -1,0 +1,200 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('../style/Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('../style/Abel-Regular.ttf');
+}
+
+html
+{
+	background-color: #e5e5e5;
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+a
+{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	font-size: 20px;
+	font-family: Audiowibe;
+	color: #252525;
+	border: solid 3px #2e43b6;
+	border-radius: 0px 0px 10px 0px;
+	padding: 10px 8px 5px 10px;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+a:hover
+{
+	background-color: #252525;
+	color: #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+h1
+{
+	font-size: 24px;
+	font-family: Audiowibe;
+	text-align: center;
+	border: solid 3px #2e43b6;
+	border-radius: 10px;
+	margin-top: 10vh;
+	margin-bottom: 6vh;
+	padding: 5px 10px 5px 10px;
+}
+
+h2
+{
+	font-size: 20px;
+	font-family: Abel;
+	text-align: center;
+	margin: 15px;
+}
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 26px;
+	background-color: #2e43b6;
+	border: solid 3px #252525;
+	border-radius: 12px;
+}
+
+section#details div
+{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+section#details p
+{
+	font-size: 18px;
+	font-family: Abel;
+	text-align: center;
+	margin: 8px;
+	margin-left: 4px;
+}
+
+section#pswd form
+{
+	display: flex;
+	flex-direction: column;
+}
+
+section#pswd form div
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+section#pswd label
+{
+	text-align: center;
+}
+
+section#pswd label, section#pswd input
+{
+	font-size: 18px;
+	font-family: Abel;
+	margin: 12px 15px 12px 15px;
+}
+
+section#pswd form input[type=password]
+{
+	border-radius: 10px;
+	background-color: #e5e5e57a;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	outline: none;
+}
+
+section#pswd p.chg_resp
+{
+	font-size: 18px;
+	font-family: Abel;	
+	background-color: #e5e5e5;
+	border-radius: 8px;
+	padding: 1px 6px 1px 6px;
+	margin: 0px;
+}
+
+section#pswd p#chg_resp_wrong
+{
+	color: #a81515;
+	border: solid 2px #a81515;
+}
+
+section#pswd p#chg_resp_good
+{
+	color: #15a815;
+	border: solid 2px #15a815;
+}
+
+section#pswd form input#confirm
+{
+	align-self: center;
+}
+
+section#pswd input#confirm
+{
+	font-size: 18px;
+	font-family: Audiowibe;
+	color: #252525;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	background-color: #e5e5e57a;
+	transition-duration: 0.18s;
+}
+
+section#pswd input#confirm:hover
+{
+	background-color: #2e43b6;
+	color: #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+section#del_account
+{
+	border: none;
+	background-color: #e5e5e5;
+}
+
+section#del_account input
+{
+	font-size: 20px;
+	font-family: Audiowibe;
+	color: #e5e5e5;
+	border: solid 2px #e5e5e5;
+	border-radius: 10px;
+	background-color: #252525a0;
+	transition-duration: 0.18s;
+}
+
+section#del_account input:hover
+{
+	color: #252525;
+	border-color: #2e43b6;
+	background-color: #e5e5e5;
+	transition-duration: 0.18s;
+}
