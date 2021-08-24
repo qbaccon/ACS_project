@@ -61,11 +61,17 @@ h1
 	padding: 5px 10px 5px 10px;
 }
 
-section#annonce
+section#annonce,
+div#master_container div.annonce_box
 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+div#master_container div.annonce_box
+{
+	gap: 10px;
 }
 
 div#master_container
@@ -83,11 +89,10 @@ div#master_container
 div#master_container div#annonce_container
 {
 	flex-wrap: wrap;
-	gap: 42px
+	gap: 55px;
 }
 
 div#master_container div#annonce_container,
-div#master_container div.annonce_box,
 div#master_container div#filter_container
 {
 	display: flex;
@@ -129,7 +134,7 @@ div#master_container div.pctr
 	justify-content: space-between;
 	align-items: center;
 	background-size: cover;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 10px;
 	width: 220px;
 	height: 280px;
 }
@@ -142,11 +147,40 @@ div#master_container div.pctr p
 	font-family: Abel;
 	color: #e5e5e5;
 	background-color: #2e43b6;
-	border-radius: 10px 0px 0px 10px;
 	margin: 0px;
 }
 
-div#master_container div.details
+div#master_container div.pctr p#ann_title
+{
+	border-radius: 10px 10px 0px 0px;
+}
+
+div#master_container div.pctr p#ann_publish
+{
+	border-radius: 0px 0px 10px 10px;
+}
+
+div#master_container div.annonce_details_link a
+{
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+	background-color: #2e43b6;
+	border: solid 2px #2e43b6;
+	border-radius: 5px;
+	padding: 1px 6px 1px 6px;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+div#master_container div.annonce_details_link a:hover
+{
+	background-color: #e5e5e5;
+	color: #2e43b6;
+	transition-duration: 0.18s;
+}
+
+/* div#master_container div.details
 {
 	display: grid;
 	grid-template-rows: auto auto auto;
@@ -206,7 +240,7 @@ div.details div#purpose
 	grid-row-start: 3;
 	grid-column-start: 1;
 	grid-column-end: 3;
-}
+} */
 
 p#empty_msg
 {
@@ -221,7 +255,7 @@ div#page_link
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	margin-top: 18px;
+	margin-top: 5vh;
 }
 
 div#page_link a,
@@ -236,6 +270,7 @@ div#page_link p
 	padding: 1px 6px 1px 6px;
 	margin: 10px;
 	margin-bottom: 1em;
+	text-decoration: none;
 	transition-duration: 0.18s;
 }
 
@@ -255,9 +290,8 @@ div#page_link a:hover
 
 footer
 {
-	position: relative;
+	margin-top: 6.5vh;
 	background-color: #2e43b6;
-	bottom: 0px;
 	width: 100%;
 }
 

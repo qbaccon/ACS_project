@@ -21,7 +21,7 @@ if ($page < $nb_annonce['nb'] / 10)
 	if (isset($_GET['filter']))
 	{
 		$filter = $_GET['filter'];
-		echo "<a href='index.php?page=$pageup&filter=$filter>Page suivante</a>";
+		echo "<a href='index.php?page=$pageup&filter=$filter'>Page suivante</a>";
 	}
 	else
 		echo "<a href='index.php?page=$pageup'>Page suivante</a>";

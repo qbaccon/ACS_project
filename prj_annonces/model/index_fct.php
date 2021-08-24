@@ -3,7 +3,7 @@ require_once ("controller/get_db.php");
 
 function apply_filter($pdo, $filter)
 {
-	$annonce = $pdo->query("SELECT id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
+	$annonce = $pdo->query("SELECT annonce.id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
 								FROM annonce INNER JOIN user ON user.id = id_user WHERE type = '".$filter."' ORDER BY annonce.id DESC");
 	return $annonce;
 }
@@ -25,7 +25,7 @@ else
 {
 	$nb_annonce = $pdo->query("SELECT COUNT(*) AS nb FROM annonce");
 	$nb_annonce = $nb_annonce->fetch();
-	$annonce = $pdo->query("SELECT id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
+	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
 							FROM annonce INNER JOIN user ON user.id = id_user ORDER BY annonce.id DESC
 							LIMIT $offset, 10");
 }
