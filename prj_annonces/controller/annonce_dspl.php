@@ -20,15 +20,31 @@ if (!empty($annonce))
 		echo "<div class='pctr'><img src='../pctr/".$value['pctr']."' height='200px' width='200px'></img></div>";
 		echo "<div class='title'>";
 		echo "<label for='title'>Titre</label>";
-		echo "<input id='a".$value['ann_id']."' type='text' value='". $value['type']."' name='title' disabled></input>";
+		echo "<input id='a".$value['ann_id']."' type='text' value='". $value['title']."' name='title' disabled></input>";
 		echo "</div>";
 		echo "<div class='place'>";
 		echo "<label for='place'>Adresse</label>";
-		echo '<input id="a'.$value['ann_id'].'" type="text" value="'. $value['title'].'" name="place" disabled></input>';
+		echo '<input id="a'.$value['ann_id'].'" type="text" value="'. $value['place'].'" name="place" disabled></input>';
 		echo '</div>';
 		echo "<div class='type'>";
 		echo "<label for='type'>Catégorie</label>";
-		echo "<input id='a".$value['ann_id']."' type='text' value='". $value['type']."' name='type' disabled></input>";
+		echo "<select id='a".$value['ann_id']."' name='type' disabled>";
+		echo "<option value='".$value['type']."'>" . $value['type'] . "</option>";
+		if ($value['type'] != "FPS")
+			echo "<option value='FPS'>FPS</option>";
+		if ($value['type'] != "Stratégie")
+			echo "<option value='Stratégie'>Stratégie</option>";
+		if ($value['type'] != "Action")
+			echo "<option value='Action'>Action</option>";
+		if ($value['type'] != "Aventure")
+			echo "<option value='Aventure'>Aventure</option>";
+		if ($value['type'] != "RPG")
+			echo "<option value='RPG'>RPG</option>";
+		if ($value['type'] != "MMORPG")
+			echo "<option value='MMORPG'>MMORPG</option>";
+		if ($value['type'] != "Puzzle/Enigme")
+			echo "<option value='Puzzle/Enigme'>Puzzle/Enigme</option>";
+		echo "</select>";
 		echo "</div>";
 		echo "<div class='pctr_name'>";
 		echo "<label for='pctr_name'>Nom de l'image</label>";
@@ -37,7 +53,7 @@ if (!empty($annonce))
 		foreach ($picture as $key_p => $value_p)
 		{
 			if ($value_p['name'] != $value['pctr'])
-			echo "<option value='".$value_p['name']."'> ".$value_p['name']." </option>";
+				echo "<option value='".$value_p['name']."'> ".$value_p['name']." </option>";
 		}
 		echo "</select>";
 		echo "</div>";

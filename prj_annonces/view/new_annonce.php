@@ -23,7 +23,16 @@ require_once "../model/ao_fct.php"
 				</div>
 				<div class="item">
 					<label for='type'>Catégorie</label>
-					<input type="text" name="type" autocomplete="off" required/>
+					<!-- <input type="text" name="type" autocomplete="off" required/> -->
+					<select name="type" required>
+						<option value="FPS">FPS</option>
+						<option value="Stratégie">Stratégie</option>
+						<option value="Action">Action</option>
+						<option value="Aventure">Aventure</option>
+						<option value="RPG">RPG</option>
+						<option value="MMORPG">MMORPG</option>
+						<option value="Puzzle/Enigme">Puzzle/Enigmes</option>
+					</select>
 				</div>
 				<div class="item">
 					<label for='pctr_name'>Nom de l'image</label>

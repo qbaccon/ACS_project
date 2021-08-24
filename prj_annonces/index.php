@@ -19,7 +19,12 @@ session_start();
 		<section id="annonce">
 			<h1>Toutes les annonces</h1>
 			<div id="master_container">
-				<?php include "view/annonce_dspl_full.php" ?>
+				<div id="filter_container">
+					<?php include "view/annonce_filter.php" ?>
+				</div>
+				<div id="annonce_container">
+					<?php include "view/annonce_dspl_full.php" ?>
+				</div>
 			</div>
 			<div id="page_link">
 				<?php include "view/page_up_down.php" ?>

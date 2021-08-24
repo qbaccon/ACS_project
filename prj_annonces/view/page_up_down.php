@@ -17,6 +17,14 @@ while ($i <= $nb_annonce['nb'] / 10)
 }
 $pageup = $page + 1;
 if ($page < $nb_annonce['nb'] / 10)
-	echo "<a href='index.php?page=$pageup'>Page suivante</a>";
+{
+	if (isset($_GET['filter']))
+	{
+		$filter = $_GET['filter'];
+		echo "<a href='index.php?page=$pageup&filter=$filter>Page suivante</a>";
+	}
+	else
+		echo "<a href='index.php?page=$pageup'>Page suivante</a>";
+}
 else
 	echo "<p>Page suivante</p>";
