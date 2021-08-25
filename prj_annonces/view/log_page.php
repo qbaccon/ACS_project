@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<section id="log_box">
-			<a href="../index.php?page=1">Retour</a>
+			<a href="../index.php">Retour</a>
 			<h1>Veuillez vous connecter pour continuer</h1>
 			<form action="log_page.php" method="post">
 				<?php include "../controller/register.php" ?>
