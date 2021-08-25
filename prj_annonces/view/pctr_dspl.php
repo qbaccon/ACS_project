@@ -1,5 +1,7 @@
 <?php 
 session_start();
+if (!isset($_SESSION['connected']))
+	header("Location: ../index.php");
 include "../model/get_user_pctr.php";
 include "../model/pctr_fct.php";
 ?>
@@ -12,7 +14,7 @@ include "../model/pctr_fct.php";
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../style/pctr_stock.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - Mes annonces</title>	
+		<title>Annonces - Ma galerie</title>	
 	</head>
 	<body>
 		<a id="back" href="annonce_organizer.php">Retour</a>

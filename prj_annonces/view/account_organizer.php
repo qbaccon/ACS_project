@@ -1,5 +1,7 @@
 <?php
 session_start();
+if (!isset($_SESSION['connected']))
+	header("Location: ../index.php");
 require_once("../controller/get_db.php");
 require_once("../model/get_user.php");
 require_once("../model/del_account.php");

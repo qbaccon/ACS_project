@@ -1,5 +1,7 @@
 <?php 
 session_start();
+if (!isset($_SESSION['connected']))
+	header("Location: ../index.php");
 require_once "../model/ao_fct.php";
 ?>
 
