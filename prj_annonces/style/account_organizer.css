@@ -108,6 +108,26 @@ section#pswd form div
 	justify-content: space-between;
 }
 
+@media (max-width: 450px)
+{
+	section#pswd form div
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	section#pswd form div label,
+	section#pswd form div input
+	{
+		margin: 5px;
+	}
+
+	section#pswd input[type=submit]
+	{
+		margin-top: 24px;
+	}
+}
+
 section#pswd label
 {
 	text-align: center;

@@ -104,6 +104,7 @@ div.pctr_box form input
 div.pctr_box form p
 {
 	padding: 1px 6px 1px 6px;
+	text-align: center;
 }
 
 div.pctr_box form input
@@ -119,6 +120,15 @@ div.pctr_box form input:hover
 	background-color: #2e43b6;
 }
 
+div#pctr_btn form
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+}
+
 div#pctr_btn input
 {
 	font-size: 20px;
@@ -129,6 +139,27 @@ div#pctr_btn input
 	border-radius: 10px;
 	margin-top: 6vh;
 	transition-duration: 0.18s;
+}
+
+@media (max-width: 360px)
+{
+	div#pctr_btn input[type=file]
+	{
+		width: 300px;
+	}
+}
+
+@media (max-width: 455px)
+{
+	div#pctr_btn form
+	{
+		gap: 0px;
+	}
+
+	div#pctr_btn input[type=submit]
+	{
+		margin-top: 20px;
+	}
 }
 
 div#pctr_btn input:hover

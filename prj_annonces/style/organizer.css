@@ -227,7 +227,10 @@ div.annonce_box div button:enabled:hover
 
 div#link
 {
-	margin-top: 4vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-bottom: 2vh;
 }
 
 div#main_container p,

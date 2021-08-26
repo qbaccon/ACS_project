@@ -45,7 +45,6 @@ div#annonce_box
 	background-color: #2e43b6;
 	border-radius: 15px;
 	padding: 15px 25px 15px 25px;
-	height: 320px;
 }
 
 div#annonce_box,
@@ -58,6 +57,19 @@ div#annonce_box div#values div
 	gap: 25px;
 }
 
+@media (max-width: 590px)
+{
+	div#annonce_box
+	{
+		flex-direction: column;
+	}
+
+	div#annonce_box div#values div#ann_purpose
+	{
+		flex-direction: column;
+	}
+}
+
 div#pctr
 {
 	height: 320px;
@@ -68,7 +80,6 @@ div#annonce_box div#values
 	display: flex;
 	flex-direction: column;
 	gap: 19.5px;
-	height: 320px;
 }
 
 div#annonce_box div#values div
