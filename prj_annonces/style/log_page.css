@@ -28,6 +28,15 @@ h1
 	border-radius: 10px;
 	margin-top: 20vh;
 	padding: 5px 10px 5px 10px;
+	text-align: center;
+}
+
+@media (max-width: 340px)
+{
+	h1
+	{
+		margin-top: 14vh;
+	}
 }
 
 a
@@ -156,13 +165,107 @@ div#modal
 {
 	display: none;
 	position: absolute;
-	top: 30vh;
+	top: 18vh;
 	background-color: #2e43b6;
+	border-radius: 12px;
+	animation-name: spawn_by_top;
+	animation-duration: 0.4s;
+}
+
+@keyframes spawn_by_top {
+	from
+	{
+		top: -300px;
+		opacity: 0;
+	}
+	to 
+	{
+		top: 18vh;
+		opacity: 1;
+	}
+}
+
+div#modal h2
+{
+	text-align: center;
+	font-size: 22px;
+	font-family: Abel;
+	color: #e5e5e5;
+	border:solid 2px #e5e5e5;
+	border-radius: 8px;
+	padding: 1px 6px 1px 6px;
 }
 
 div#modal form
 {
 	display: flex;
 	flex-direction: column;
+	padding: 25px;
+	gap: 15px;
+}
+
+div#modal form div
+{
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+}
+
+div#modal form div#mod_btn
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+section#modal_box form input,
+section#modal_box form label,
+section#modal_box form button
+{
+	text-align: center;
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+	border-radius: 8px;
+	outline: none;
+}
+
+section#modal_box form div.item input
+{
+	width: 75%;
+}
+
+section#modal_box form input,
+section#modal_box form button
+{
+	color: #252525;
+	background-color: #e5e5e57a;
+	border: solid 2px #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+section#modal_box form input:hover
+{
+	box-shadow: 0px 0px 18px #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+section#modal_box form div#mod_btn
+{
+	margin-top: 25px;
+}
+
+section#modal_box form div#mod_btn input,
+section#modal_box form div#mod_btn button
+{
+	color: #252525;
+}
+
+section#modal_box form div#mod_btn input:hover,
+section#modal_box form div#mod_btn button:hover
+{
+	color: #e5e5e5;
+	background-color: #2e43b6;
+	box-shadow: 0px 0px 0px #2e43b6;
 }

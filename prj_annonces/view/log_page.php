@@ -36,11 +36,23 @@ if (isset($_SESSION['connected']))
 		<section id="modal_box">
 			<div id="modal">
 				<form action="log_page.php" method="post">
-					<input type="email" name="mail_r" required/>
-					<input type="text" name="name_r" required/>
-					<input type="password" name="psw_r" required/>
-					<input type="submit" name="register" value="S'inscrire"/>
-					<button onclick="toggle_modal()">Retour</button>
+					<h2 id="mod_title">Veuillez remplir tous les champs</h2>
+					<div class="item">
+						<label for="mail_r">Email</label>
+						<input type="email" name="mail_r" required/>
+					</div>
+					<div class="item">
+						<label for="name_r">Nom</label>
+						<input type="text" name="name_r" required/>
+					</div>
+					<div class="item">
+						<label for="psw_r">Mot de passe</label>
+						<input type="password" name="psw_r" required/>
+					</div>
+					<div id="mod_btn">
+						<button onclick="toggle_modal()">Retour</button>
+						<input type="submit" name="register" value="S'inscrire"/>
+					</div>
 				</form>
 			</div>
 		</section>
