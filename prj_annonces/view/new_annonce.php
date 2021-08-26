@@ -25,7 +25,6 @@ require_once "../model/ao_fct.php"
 				</div>
 				<div class="item">
 					<label for='type'>Catégorie</label>
-					<!-- <input type="text" name="type" autocomplete="off" required/> -->
 					<select name="type" required>
 						<option value="FPS">FPS</option>
 						<option value="Stratégie">Stratégie</option>
@@ -38,17 +37,12 @@ require_once "../model/ao_fct.php"
 				</div>
 				<div class="item">
 					<label for='pctr_name'>Nom de l'image</label>
-					<!-- <?php include "select_maker_add.php" ?> -->
-					<input type="file" name="pctr_name"/>
+					<input type="file" name="pctr_name" accept=".jpg, .png, .gif"/>
 				</div>
 				<div class="item">
 					<label for='purpose'>Description</label>
 					<input type="textarea" name="purpose" autocomplete="off" required/>
 				</div>
-				<!-- <div class="item">
-					<label for='publish'>Date de publication</label>
-					<input type="date" name="publish" required/>
-				</div> -->
 				<div class="item">
 					<label for='price'>Prix (€)</label>
 					<input type="number" name="price" min="0" autocomplete="off" required/>

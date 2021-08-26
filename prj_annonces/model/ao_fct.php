@@ -1,16 +1,30 @@
 <?php
 require_once("../controller/get_db.php");
+require_once "../controller/get_pctr.php";
 
 if (isset($_POST['new']))
 {
 	$pdo = get_db();
 	$tmp_file = $_FILES['pctr_name']['tmp_name'];
 	$file = $_FILES['pctr_name']['name'];
+	$file_exist = 1;
 	if (!empty($file))
 	{
-		$target = "../pctr/";
-		move_uploaded_file($tmp_file, $target . $file);
-		$pdo->query("INSERT INTO picture VALUES (DEFAULT, '".$_SESSION['who_id']."', '".$file."')");
+		$pctrs = get_pctr();
+		if ($pctrs != "empty")
+		{
+			foreach($pctrs as $tmp_pctr)
+			{
+				if ($tmp_pctr == $file)
+					$file_exist = 0;
+			}
+		}
+		if ($file_exist == 1)
+		{
+			$target = "../pctr/";
+			move_uploaded_file($tmp_file, $target . $file);
+			$pdo->query("INSERT INTO picture VALUES (DEFAULT, '".$_SESSION['who_id']."', '".$file."')");
+		}
 	}
 	else
 		$file = "default.gif";

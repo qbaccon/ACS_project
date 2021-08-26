@@ -21,6 +21,11 @@ if (isset($_POST['register']))
 		}
 	}
 	if ($check == 1)
+	{
 		$pdo->query("INSERT INTO user VALUES (DEFAULT, '".$_POST['name_r']."', 
 		'".$_POST['mail_r']."', '".$_POST['psw_r']."')");
+		// $query = $pdo->query("SELECT id FROM user WHERE mail='".$_POST['mail_r']."'");
+		// $query = $query->fetch();
+		// mkdir("../pctr/" . $_POST['name_r'] . $query['id'], 0777);
+	}
 }
