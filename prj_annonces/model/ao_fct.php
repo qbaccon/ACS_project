@@ -10,16 +10,7 @@ if (isset($_POST['new']))
 	$file_exist = 1;
 	if (!empty($file))
 	{
-		$pctrs = get_pctr();
-		if ($pctrs != "empty")
-		{
-			foreach($pctrs as $tmp_pctr)
-			{
-				if ($tmp_pctr == $file)
-					$file_exist = 0;
-			}
-		}
-		if ($file_exist == 1)
+		if (!file_exists("../pctr/" . $file))
 		{
 			$target = "../pctr/";
 			move_uploaded_file($tmp_file, $target . $file);
@@ -39,7 +30,7 @@ if (isset($_POST['del']))
 	$pdo = get_db();
 	$pctr = $pdo->query("SELECT pctr FROM annonce WHERE id='".$_POST['id']."'");
 	$pctr = $pctr->fetch();
-	if ($pctr['pctr'] != "default.gif")
+	if ($pctr['pctr'] != "default.gif" && file_exist("../pctr/" . $pctr['pctr']))
 	{
 		unlink("../pctr/" . $pctr['pctr']);
 		$pdo->query("DELETE FROM picture WHERE name='".$pctr['pctr']."'");

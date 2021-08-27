@@ -15,7 +15,7 @@ if (isset($_POST['send_pctr']))
 	$pdo = get_db();
 	$tmp_file = $_FILES['pctr_name']['tmp_name'];
 	$file = $_FILES['pctr_name']['name'];
-	if (!empty($file))
+	if (!empty($file) && !file_exists("../pctr/" . $file))
 	{
 		$target = "../pctr/";
 		move_uploaded_file($tmp_file, $target . $file);
