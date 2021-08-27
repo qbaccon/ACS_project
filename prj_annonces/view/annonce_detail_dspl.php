@@ -20,7 +20,7 @@ echo "<p class='label'>Genre</p>";
 echo "<p>" . $annonce['type'] . "</p>";
 echo "</div>";
 echo "<div id='ann_place'>";
-echo "<p class='label'>Adress</p>";
+echo "<p class='label'>Adresse</p>";
 echo "<p>" . $annonce['place'] . "</p>";
 echo "</div>";
 echo "<div id='ann_price'>";
