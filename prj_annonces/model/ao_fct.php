@@ -7,7 +7,6 @@ if (isset($_POST['new']))
 	$pdo = get_db();
 	$tmp_file = $_FILES['pctr_name']['tmp_name'];
 	$file = $_FILES['pctr_name']['name'];
-	$file_exist = 1;
 	if (!empty($file))
 	{
 		if (!file_exists("../pctr/" . $file))
