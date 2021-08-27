@@ -81,7 +81,7 @@ div.annonce_box
 {
 	display: grid;
 	grid-template-rows: auto 200px auto auto auto auto;
-	grid-template-columns: auto auto;
+	grid-template-columns: 160px 160px;
 	background-color: #2e43b6;
 	border: solid 2px #252525;
 	border-radius: 12px;
@@ -94,6 +94,7 @@ div.annonce_box
 	div.annonce_box
 	{
 		width: 295px;
+		grid-template-columns: 146.5px 146.5px;
 	}
 }
 
