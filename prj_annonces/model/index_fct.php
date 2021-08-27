@@ -1,9 +1,53 @@
 <?php
 require_once ("controller/get_db.php");
 
+function transform_filter_code($filter)
+{
+	switch ($filter)
+	{
+		case "fps":
+		{
+			$filter = "FPS";
+			break;
+		}
+		case "str":
+		{
+			$filter = "Stratégie";
+			break;
+		}
+		case "act":
+		{
+			$filter = "Action";
+			break;
+		}
+		case "adv":
+		{
+			$filter = "Aventure";
+			break;
+		}
+		case "rpg":
+		{
+			$filter = "RPG";
+			break;
+		}
+		case "mmorpg":
+		{
+			$filter = "MMORPG";
+			break;
+		}
+		case "pzl":
+		{
+			$filter = "Puzzle/Enigme";
+			break;
+		}
+	}
+	return $filter;
+}
+
 function apply_filter($pdo, $filter)
 {
-	$annonce = $pdo->query("SELECT annonce.id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
+	$filter = transform_filter_code($filter);
+	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
 								FROM annonce INNER JOIN user ON user.id = id_user WHERE type = '".$filter."' ORDER BY annonce.id DESC");
 	return $annonce;
 }

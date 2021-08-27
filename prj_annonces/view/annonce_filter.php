@@ -1,5 +1,5 @@
 <?php
-echo "<div><a href='index.php?filter=all' onclick='get_pushed()'>Tous</a></div>";
+echo "<div><a href='index.php?filter=all'>Tous</a></div>";
 echo "<div><a href='index.php?filter=fps'>FPS</a></div>";
 echo "<div><a href='index.php?filter=str'>Stratégie</a></div>";
 echo "<div><a href='index.php?filter=act'>Action</a></div>";
