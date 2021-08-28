@@ -47,8 +47,8 @@ function transform_filter_code($filter)
 function apply_filter($pdo, $filter)
 {
 	$filter = transform_filter_code($filter);
-	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
-								FROM annonce INNER JOIN user ON user.id = id_user WHERE type = '".$filter."' ORDER BY title");
+	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b') AS publish, place, user.id, pseudo, mail
+								FROM annonce INNER JOIN user ON user.id = id_user WHERE type = '".$filter."' ORDER BY title DESC");
 	return $annonce;
 }
 
@@ -69,7 +69,7 @@ if (isset($_GET['filter']) && ($_GET['filter'] == "fps" || $_GET['filter'] == "s
 }
 else
 {
-	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
+	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b') AS publish, place, user.id, pseudo, mail
 							FROM annonce INNER JOIN user ON user.id = id_user ORDER BY title
 							LIMIT $offset, 12");
 }
