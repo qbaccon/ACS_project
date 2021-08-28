@@ -1,6 +1,6 @@
 <?php
 echo "<div id='pctr'>";
-echo "<img src='../pctr/".$annonce['pctr']."' width='260px' height='320px'></img>";
+echo "<img src='../pctr/".$annonce['pctr']."' width='300px' height='430px'></img>";
 echo "</div>";
 echo "<div id='values'>";
 echo "<div id='ann_author'>";

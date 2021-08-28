@@ -8,7 +8,7 @@ if (!empty($picture))
 		echo "<input type='hidden' name='pctr_id' value='".$value['pctr_id']."'/>";
 		echo "<input type='hidden' name='pctr_name' value='".$value['name']."'/>";
 		echo "<p class='subtitle'> Nom de l'image</br>" . $value['name'] . "</p>";
-		echo "<img src='../pctr/" . $value['name'] . "' width='200px' height='200px'/>";
+		echo "<img src='../pctr/" . $value['name'] . "' width='160px' height='200px'/>";
 		echo "<input type='submit' name='del' value='Supprimer'/>";
 		echo "</form>";
 		echo "</div>";

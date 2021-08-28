@@ -12,7 +12,7 @@
 
 html
 {
-	background-color: #e5e5e5;
+	background-image: url("../rsrc/background.jpg");
 }
 
 html, body
@@ -30,9 +30,11 @@ body
 h1
 {
 	font-size: 24px;
+	font-weight: normal;
 	font-family: Audiowibe;
 	text-align: center;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 10px;
 	margin-top: 8vh;
 	margin-bottom: 6vh;
@@ -53,7 +55,7 @@ section#add_form
 
 section#add_form form
 {
-	background-color: #2e43b6;
+	background-color: #09410c;
 	border: solid 3px #252525;
 	border-radius: 12px;
 	padding: 10px 18px 10px 18px;
@@ -66,6 +68,11 @@ section#add_form form div.item
 	flex-direction: column;
 	font-size: 20px;
 	font-family: Abel;
+}
+
+section#add_form form div.item label
+{
+	color: #e5e5e5;
 }
 
 section#add_form form div.item input,
@@ -153,7 +160,7 @@ div.btn a
 div.btn button:hover,
 div.btn a:hover
 {
-	background-color: #2e43b6;
+	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
 }

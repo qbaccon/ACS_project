@@ -12,7 +12,7 @@
 
 html
 {
-	background-color: #e5e5e5;
+	background-image: url("../rsrc/background.jpg");
 }
 
 html, body
@@ -31,30 +31,38 @@ section#master_container
 h1
 {
 	font-size: 24px;
+	font-weight: normal;
 	font-family: Audiowibe;
 	text-align: center;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 10px;
-	margin-top: 8vh;
+	margin-top: 2vh;
 	margin-bottom: 8vh;
 	padding: 5px 10px 5px 10px;
 }
 
 div#annonce_box
 {
-	background-color: #2e43b6;
-	border-radius: 15px;
-	padding: 15px 25px 15px 25px;
-}
-
-div#annonce_box,
-div#annonce_box div#values div
-{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
+	background-color: #09410c;
+	border-radius: 15px;
+	padding: 15px 25px 15px 25px;
+}
+
+div#annonce_box div#values div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 25px; */
 }
 
 @media (max-width: 590px)
@@ -72,7 +80,7 @@ div#annonce_box div#values div
 
 div#pctr
 {
-	height: 320px;
+	height: 430px;
 }
 
 div#annonce_box div#values
@@ -120,7 +128,21 @@ a#back_link
 a#back_link:hover
 {
 	color: #252525;
-	border-color: #2e43b6;
+	border-color: #09410c;
 	background-color: #e5e5e5;
 	transition-duration: 0.18s;
+}
+
+@media (max-width: 350px)
+{
+	div#pctr
+	{
+		height: 390px;
+	}
+
+	div#pctr img
+	{
+		width: 260px;
+		height: 390px;
+	}
 }

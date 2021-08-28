@@ -31,9 +31,9 @@ session_start();
 			</div>
 		</section>
 	</body>
-	<footer>
+	<!-- <footer>
 		<div>
 			<p>&copyCopyright Quentin BACCON</p>
 		</div>
-	</footer>
+	</footer> -->
 </html>

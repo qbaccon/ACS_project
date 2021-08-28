@@ -12,7 +12,7 @@
 
 html
 {
-	background-color: #e5e5e5;
+	background-image: url("../rsrc/background.jpg");
 }
 
 html, body
@@ -30,8 +30,10 @@ section#display
 h1
 {
 	font-size: 24px;
+	font-weight: normal;
 	font-family: Audiowibe;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 10px;
 	margin-top: 8vh;
 	margin-bottom: 6vh;
@@ -50,8 +52,8 @@ a#back
 	left: -5px;
 	font-size: 20px;
 	font-family: Audiowibe;
-	color: #252525;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 0px 0px 10px 0px;
 	padding: 10px 8px 5px 10px;
 	text-decoration: none;
@@ -60,7 +62,8 @@ a#back
 
 a#back:hover
 {
-	background-color: #252525;
+	border-color: #e5e5e5;
+	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
 }
@@ -82,7 +85,7 @@ div.annonce_box
 	display: grid;
 	grid-template-rows: auto 200px auto auto auto auto;
 	grid-template-columns: 160px 160px;
-	background-color: #2e43b6;
+	background-color: #09410c;
 	border: solid 2px #252525;
 	border-radius: 12px;
 	padding: 10px;
@@ -221,7 +224,7 @@ div.annonce_box div button
 
 div.annonce_box div button:enabled:hover
 {
-	background-color: #2e43b6;
+	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
 }
@@ -254,7 +257,7 @@ section#display a
 
 section#display a:hover
 {
-	border-color: #2e43b6;
+	border-color: #09410c;
 	color: #252525;
 	background-color: #e5e5e5;
 	transition-duration: 0.18s;

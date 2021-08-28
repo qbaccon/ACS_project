@@ -6,7 +6,7 @@ if ($page > 1)
 else
 	echo "<p>Page précédente</p>";
 $i = 0;
-while ($i <= $nb_annonce['nb'] / 10)
+while ($i <= $nb_annonce['nb'] / 12)
 {
 	$j = $i + 1;
 	if ($j != $page)
@@ -16,7 +16,7 @@ while ($i <= $nb_annonce['nb'] / 10)
 	$i++;
 }
 $pageup = $page + 1;
-if ($page < $nb_annonce['nb'] / 10)
+if ($page < $nb_annonce['nb'] / 12)
 {
 	if (isset($_GET['filter']))
 	{

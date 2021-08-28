@@ -12,7 +12,7 @@
 
 html
 {
-	background-color: #e5e5e5;
+	background-image: url("../rsrc/background.jpg");
 }
 
 html, body
@@ -23,8 +23,10 @@ html, body
 h1
 {
 	font-size: 24px;
+	font-weight: normal;
 	font-family: Audiowibe;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 10px;
 	margin-top: 20vh;
 	padding: 5px 10px 5px 10px;
@@ -46,8 +48,8 @@ a
 	left: -5px;
 	font-size: 20px;
 	font-family: Audiowibe;
-	color: #252525;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 0px 0px 10px 0px;
 	padding: 10px 8px 5px 10px;
 	text-decoration: none;
@@ -56,7 +58,7 @@ a
 
 a:hover
 {
-	background-color: #252525;
+	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
 }
@@ -70,7 +72,7 @@ section#log_box
 
 section#log_box form
 {
-	background-color: #2e43b6;
+	background-color: #09410c;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -122,8 +124,8 @@ section#log_box button
 	font-family: Abel;
 	font-size: 20px;
 	color: #e5e5e5;
-	background-color: #2e43b6;
-	border: solid 2px #2e43b6;
+	background-color: #09410c;
+	border: solid 2px #09410c;
 	border-radius: 8px;
 	margin-top: 25px;
 	transition-duration: 0.18s;
@@ -144,7 +146,7 @@ section#log_box form input[type='submit']
 
 section#log_box form input[type='submit']:hover
 {
-	background-color: #2e43b6;
+	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
 }
@@ -166,7 +168,7 @@ div#modal
 	display: none;
 	position: absolute;
 	top: 18vh;
-	background-color: #2e43b6;
+	background-color: #09410c;
 	border-radius: 12px;
 	animation-name: spawn_by_top;
 	animation-duration: 0.4s;
@@ -266,6 +268,6 @@ section#modal_box form div#mod_btn input:hover,
 section#modal_box form div#mod_btn button:hover
 {
 	color: #e5e5e5;
-	background-color: #2e43b6;
-	box-shadow: 0px 0px 0px #2e43b6;
+	background-color: #09410c;
+	box-shadow: 0px 0px 0px #09410c;
 }

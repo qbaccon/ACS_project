@@ -48,18 +48,18 @@ function apply_filter($pdo, $filter)
 {
 	$filter = transform_filter_code($filter);
 	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
-								FROM annonce INNER JOIN user ON user.id = id_user WHERE type = '".$filter."' ORDER BY annonce.id DESC");
+								FROM annonce INNER JOIN user ON user.id = id_user WHERE type = '".$filter."' ORDER BY title");
 	return $annonce;
 }
 
 $pdo = get_db();
 $nb_annonce = $pdo->query("SELECT COUNT(*) AS nb FROM annonce");
 $nb_annonce = $nb_annonce->fetch();
-if (isset($_GET['page']) && $_GET['page'] > 0 && $_GET['page'] - 10 <= $nb_annonce['nb'] / 10)
+if (isset($_GET['page']) && $_GET['page'] > 0 && $_GET['page'] - 12 <= $nb_annonce['nb'] / 12)
 	$page = $_GET['page'];
 else
 	$page = 1;
-$offset = (10 * $page) - 10;
+$offset = (12 * $page) - 12;
 if (isset($_GET['filter']) && ($_GET['filter'] == "fps" || $_GET['filter'] == "str" || $_GET['filter'] == "act" || $_GET['filter'] == "adv" ||
 	$_GET['filter'] == "rpg" || $_GET['filter'] == "mmorpg" || $_GET['filter'] == "pzl"))
 {
@@ -70,8 +70,8 @@ if (isset($_GET['filter']) && ($_GET['filter'] == "fps" || $_GET['filter'] == "s
 else
 {
 	$annonce = $pdo->query("SELECT annonce.id AS ann_id, id_user, title, type, pctr, purpose, price, DATE_FORMAT(publish, '%e %b %Y') AS publish, place, user.id, pseudo, mail
-							FROM annonce INNER JOIN user ON user.id = id_user ORDER BY annonce.id DESC
-							LIMIT $offset, 10");
+							FROM annonce INNER JOIN user ON user.id = id_user ORDER BY title
+							LIMIT $offset, 12");
 }
 if (!empty($annonce))
 	$annonce = $annonce->fetchAll();

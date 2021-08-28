@@ -12,7 +12,7 @@
 
 html
 {
-	background-color: #e5e5e5;
+	background-image: url("../rsrc/background.jpg");
 }
 
 html, body
@@ -34,8 +34,8 @@ a#back
 	left: -5px;
 	font-size: 20px;
 	font-family: Audiowibe;
-	color: #252525;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 0px 0px 10px 0px;
 	padding: 10px 8px 5px 10px;
 	text-decoration: none;
@@ -44,7 +44,8 @@ a#back
 
 a#back:hover
 {
-	background-color: #252525;
+	border-color: #e5e5e5;
+	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
 }
@@ -52,8 +53,10 @@ a#back:hover
 h1
 {
 	font-size: 24px;
+	font-weight: normal;
 	font-family: Audiowibe;
-	border: solid 3px #2e43b6;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
 	border-radius: 10px;
 	margin-top: 8vh;
 	margin-bottom: 6vh;
@@ -85,7 +88,7 @@ div.pctr_box form
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: #2e43b6;
+	background-color: #09410c;
 	border: solid 2px #e5e5e5;
 	border-radius: 12px;
 	padding: 5px 12px 5px 12px;
@@ -117,7 +120,7 @@ div.pctr_box form input
 div.pctr_box form input:hover
 {
 	color: #e5e5e5;
-	background-color: #2e43b6;
+	background-color: #09410c;
 }
 
 div#pctr_btn form
@@ -164,7 +167,7 @@ div#pctr_btn input
 
 div#pctr_btn input:hover
 {
-	border-color: #2e43b6;
+	border-color: #09410c;
 	color: #252525;
 	background-color: #e5e5e5;
 	transition-duration: 0.18s;
