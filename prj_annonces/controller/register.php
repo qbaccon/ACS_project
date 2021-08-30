@@ -1,7 +1,6 @@
 <?php
 require_once("get_db.php");
 
-// echo $value[$key];
 if (isset($_POST['register']))
 {
 	$check = 1;

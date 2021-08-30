@@ -156,6 +156,17 @@ section#log_box form label
 	color: #e5e5e5;
 }
 
+section#log_box form p#warn_mess
+{
+	font-size: 18px;
+	font-family: Abel;
+	color: #a00000;
+	background-color: #e5e5e57a;
+	border: solid 2px #a00000;
+	border-radius: 8px;
+	padding: 1px 6px 1px 6px;
+}
+
 section#modal_box
 {
 	display: flex;
