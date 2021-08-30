@@ -13,7 +13,7 @@ require_once "../model/ao_fct.php"
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../style/new.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - Ajouter une annonce</title>	
+		<title>Gamothèque - Ajouter une annonce</title>	
 	</head>
 	<body>
 		<section id="add_form">

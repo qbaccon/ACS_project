@@ -16,7 +16,7 @@ require_once("../model/del_account.php");
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../style/account_organizer.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - Gestion du Compte</title>	
+		<title>Gamothèque - Gestion du Compte</title>	
 	</head>
 	<body>
 		<a href="../index.php">Retour</a>

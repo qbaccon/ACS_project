@@ -15,7 +15,7 @@ if (!isset($_SESSION['connected']))
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../style/favs_organizer.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - Mes favoris</title>	
+		<title>Gamothèque - Mes favoris</title>	
 	</head>
 	<body>
 		<a id="back_link" href="../index.php">Retour</a>

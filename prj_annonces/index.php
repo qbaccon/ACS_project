@@ -10,14 +10,17 @@ session_start();
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style/index.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - Accueil</title>	
+		<title>Gamothèque - Accueil</title>	
 	</head>
 	<header>
 		<?php include "view/header.php" ?>
 	</header>
 	<body>
 		<section id="annonce">
-			<h1>Toutes les annonces</h1>
+			<h1>
+				Gamothèque<hr>
+				<span>La bibliothèque de jeux pour tous</span>
+			</h1>
 			<div id="master_container">
 				<div id="filter_container">
 					<?php include "view/annonce_filter.php" ?>

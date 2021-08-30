@@ -12,7 +12,7 @@ if (isset($_SESSION['connected']))
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../style/log_page.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - connexion</title>	
+		<title>Gamothèque - connexion</title>	
 	</head>
 	<body>
 		<section id="log_box">

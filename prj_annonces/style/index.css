@@ -97,6 +97,17 @@ h1
 	padding: 5px 10px 5px 10px;
 }
 
+h1 hr
+{
+	margin: 0px;
+}
+
+h1 span
+{
+	font-size: 18px;
+	font-family: Abel;
+}
+
 section#annonce,
 div#master_container div.annonce_box
 {

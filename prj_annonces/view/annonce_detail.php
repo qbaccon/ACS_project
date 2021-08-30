@@ -15,7 +15,7 @@ $id = $_GET['ann_id'];
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../style/annonce_detail.css" />
 		<!-- <link rel="icon" href="pctrs/favicon.gif"/> -->
-		<title>Annonces - Détails de l'annonce</title>
+		<title>Gamothèque - Détails de l'annonce</title>
 	</head>
 	<body>
 		<section id="master_container">
