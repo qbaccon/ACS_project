@@ -12,6 +12,7 @@
 
 html
 {
+	
 	background-image: url("../rsrc/background.jpg");
 }
 
@@ -111,7 +112,162 @@ div#annonce_box div#values div p.label
 	font-weight: bold;
 }
 
-a#back_link
+section#contact_section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div#modal_box
+{
+	display: none;
+	position: absolute;
+	top: 18vh;
+	background-color: #09410c;
+	border-radius: 12px;
+	animation-name: spawn_by_top;
+	animation-duration: 0.4s;
+}
+
+@keyframes spawn_by_top {
+	from
+	{
+		top: -300px;
+		opacity: 0;
+	}
+	to 
+	{
+		top: 18vh;
+		opacity: 1;
+	}
+}
+
+div#modal_box h2
+{
+	text-align: center;
+	font-size: 22px;
+	font-family: Abel;
+	color: #e5e5e5;
+	border:solid 2px #e5e5e5;
+	border-radius: 8px;
+	padding: 1px 6px 1px 6px;
+}
+
+div#modal_box form
+{
+	display: flex;
+	flex-direction: column;
+	padding: 25px;
+	gap: 15px;
+}
+
+div#modal_box form div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+div#modal_box form div#mod_btn
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+section#contact_section form label,
+section#contact_section form input,
+section#contact_section form textarea,
+section#contact_section form button
+{
+	text-align: center;
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+	border-radius: 8px;
+	outline: none;
+}
+
+section#contact_section form textarea
+{
+	text-align: left;
+	resize: none;
+}
+
+section#contact_section form div.item input,
+section#contact_section form div.item textarea
+{
+	width: 75%;
+}
+
+section#contact_section form input,
+section#contact_section form textarea,
+section#contact_section form button
+{
+	color: #252525;
+	background-color: #e5e5e57a;
+	border: solid 2px #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+section#contact_section form input:hover,
+section#contact_section form textarea:hover
+{
+	box-shadow: 0px 0px 18px #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+section#contact_section form input:focus,
+section#contact_section form textarea:focus
+{
+	animation: twinkle 0.8s infinite alternate;
+}
+
+@keyframes twinkle
+{
+	0%
+	{
+		box-shadow: 0px 0px 0px #e5e5e5;
+	}
+	100%
+	{
+		box-shadow: 0px 0px 12px #e5e5e5;
+	}
+}
+
+section#contact_section form div#mod_btn
+{
+	margin-top: 25px;
+}
+
+section#contact_section form div#mod_btn input,
+section#contact_section form div#mod_btn button
+{
+	color: #252525;
+}
+
+section#contact_section form div#mod_btn input:hover,
+section#contact_section form div#mod_btn button:hover
+{
+	color: #e5e5e5;
+	background-color: #09410c;
+	box-shadow: 0px 0px 0px #09410c;
+}
+
+div#page_btn
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	margin-top: 35px;
+}
+
+div#page_btn a,
+div#page_btn button
 {
 	font-size: 20px;
 	font-family: Audiowibe;
@@ -119,13 +275,13 @@ a#back_link
 	border: solid 2px #e5e5e5;
 	border-radius: 10px;
 	background-color: #252525a0;
-	margin-top: 35px;
 	padding: 1px 6px 1px 6px;
 	text-decoration: none;
 	transition-duration: 0.18s;
 }
 
-a#back_link:hover
+div#page_btn a:hover,
+div#page_btn button:hover
 {
 	color: #252525;
 	border-color: #09410c;

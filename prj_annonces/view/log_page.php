@@ -31,7 +31,7 @@ if (isset($_SESSION['connected']))
 				</div>	
 				<input type="submit" name="login" value="Connexion"/>
 			</form>
-			<button onclick="toggle_modal()">Pas de compte ? Inscrivez-vous</button>
+			<button onclick="toggle_reg_modal()">Pas de compte ? Inscrivez-vous</button>
 		</section>
 		<section id="modal_box">
 			<div id="modal">
@@ -50,7 +50,7 @@ if (isset($_SESSION['connected']))
 						<input type="password" name="psw_r" required/>
 					</div>
 					<div id="mod_btn">
-						<button onclick="toggle_modal()">Retour</button>
+						<button type="button" onclick="toggle_reg_modal()">Retour</button>
 						<input type="submit" name="register" value="S'inscrire"/>
 					</div>
 				</form>
