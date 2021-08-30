@@ -58,6 +58,7 @@ a
 
 a:hover
 {
+	border-color: #e5e5e5;
 	background-color: #09410c;
 	color: #e5e5e5;
 	transition-duration: 0.18s;
@@ -95,11 +96,27 @@ section#log_box form div input
 	transition-duration: 0.18s;
 }
 
-section#log_box form div input:hover,
-section#log_box form div input:focus
+section#log_box form div input:hover
 {
 	box-shadow: 0px 0px 18px #e5e5e5;
 	transition-duration: 0.18s;
+}
+
+section#log_box form div input:focus
+{
+	animation: twinkle 0.8s infinite alternate;
+}
+
+@keyframes twinkle
+{
+	0%
+	{
+		box-shadow: 0px 0px 0px #e5e5e5;
+	}
+	100%
+	{
+		box-shadow: 0px 0px 12px #e5e5e5;
+	}
 }
 
 section#log_box form input,
