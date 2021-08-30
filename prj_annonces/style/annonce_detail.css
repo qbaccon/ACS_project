@@ -60,10 +60,6 @@ div#annonce_box div#values div
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 25px; */
 }
 
 @media (max-width: 590px)
@@ -140,6 +136,29 @@ div#modal_box
 	{
 		top: 18vh;
 		opacity: 1;
+	}
+}
+
+@keyframes spawn_by_bottom {
+	from
+	{
+		bottom: -150vh;
+		opacity: 0;
+	}
+	to 
+	{
+		bottom: -60vh;
+		opacity: 1;
+	}
+}
+
+@media (max-width: 590px)
+{
+	div#modal_box
+	{
+		top: auto;
+		bottom: -60vh;
+		animation-name: spawn_by_bottom;
 	}
 }
 
@@ -267,6 +286,7 @@ div#page_btn
 }
 
 div#page_btn a,
+div#page_btn input,
 div#page_btn button
 {
 	font-size: 20px;
@@ -281,6 +301,7 @@ div#page_btn button
 }
 
 div#page_btn a:hover,
+div#page_btn input:hover,
 div#page_btn button:hover
 {
 	color: #252525;

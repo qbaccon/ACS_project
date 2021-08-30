@@ -3,6 +3,7 @@ session_start();
 require_once ("../controller/get_db.php");
 require_once ("../model/get_annonce.php");
 require_once ("../controller/send_mail.php");
+require_once ("../model/favs_fct.php");
 $id = $_GET['ann_id'];
 ?>
 
@@ -24,6 +25,12 @@ $id = $_GET['ann_id'];
 			</div>
 			<div id="page_btn">
 				<a id="back_link" href="../index.php">Retour</a>
+				<?php if ($is_favs === 0) { ?>
+				<?= "<form id='favs_form' method='post' action='annonce_detail.php?ann_id=$id'>" ?>
+					<?= "<input type='hidden' name='ann_id' value='".$id."'>" ?>
+					<input type="submit" name="make_favs" value="&#9734">
+				</form>
+				<?php } ?>
 				<button id="mod_btn" onclick="toggle_contact_mod()">Contact</button>
 			</div>
 		</section>

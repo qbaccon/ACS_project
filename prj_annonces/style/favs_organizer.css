@@ -1,0 +1,164 @@
+@font-face
+{
+	font-family: "Audiowibe";
+	src: url('../style/Audiowide-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: "Abel";
+	src: url('../style/Abel-Regular.ttf');
+}
+
+html
+{
+	background-image: url("../rsrc/background.jpg");
+}
+
+html, body
+{
+	margin: 0px;
+}
+
+body,
+section,
+div.annonce_box
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section
+{
+	width: 100%;
+}
+
+div.annonce_box
+{
+	gap: 10px;
+}
+
+a#back_link
+{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	font-size: 20px;
+	font-family: Audiowibe;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
+	border-radius: 0px 0px 10px 0px;
+	padding: 10px 8px 5px 10px;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+a#back_link:hover
+{
+	border-color: #e5e5e5;
+	background-color: #09410c;
+	color: #e5e5e5;
+	transition-duration: 0.18s;
+}
+
+h1
+{
+	font-size: 24px;
+	font-weight: normal;
+	font-family: Audiowibe;
+	text-align: center;
+	color: #e5e5e5;
+	border: solid 3px #09410c;
+	border-radius: 10px;
+	margin-top: 10vh;
+	margin-bottom: 6vh;
+	padding: 5px 10px 5px 10px;
+}
+
+div#master_container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #a0a0a0a0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 100%;
+}
+
+div#annonce_container
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 55px;
+}
+
+section#favs div#annonce_container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+section#favs div.pctr
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+section#favs div.pctr p
+{
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	font-family: Abel;
+	color: #e5e5e5;
+	background-color: #09410c;
+	margin: 0px;
+}
+
+section#favs div.pctr p#ann_title
+{
+	border-radius: 10px 10px 0px 0px;
+}
+
+section#favs div.pctr p#ann_publish
+{
+	border-radius: 0px 0px 10px 10px;
+}
+
+section#favs div.annonce_details_link a,
+section#favs input[type=submit]
+{
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+	background-color: #09410c;
+	border: solid 2px #09410c;
+	border-radius: 5px;
+	padding: 1px 6px 1px 6px;
+	text-decoration: none;
+	transition-duration: 0.18s;
+}
+
+section#favs div.annonce_details_link a:hover,
+section#favs input[type=submit]:hover
+{
+	background-color: #e5e5e5;
+	color: #09410c;
+	transition-duration: 0.18s;
+}
+
+p#empty_msg
+{
+	font-size: 20px;
+	font-family: Abel;
+	color: #e5e5e5;
+}
