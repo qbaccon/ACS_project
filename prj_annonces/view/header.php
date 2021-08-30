@@ -3,8 +3,10 @@
 if (isset($_SESSION['connected']))
 {
 	echo "<div>";
-	echo "<a href='view/annonce_organizer.php'>Mes annonces</a>";
-	echo "<a href='view/account_organizer.php'>Mon compte</a>";
+	echo "<p id='menu_tkn' onclick='toggle_nav_menu()'>&#9776</p>";
+	echo "<a class='account_page' href='view/annonce_organizer.php'>Mes annonces</a>";
+	echo "<a class='account_page' href='view/favs_organizer.php'>Mes favoris</a>";
+	echo "<a class='account_page' href='view/account_organizer.php'>Mon compte</a>";
 	echo "<a href='controller/logout.php'>Déconnexion</a>";
 	echo "</div>";
 }
