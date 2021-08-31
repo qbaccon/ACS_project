@@ -1,5 +1,6 @@
 <?php
-$pdo = get_db()
+	require_once("function/get_db.php");
+	$pdo = get_db();
 ?>
 
 <!DOCTYPE html>
