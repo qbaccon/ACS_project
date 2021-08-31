@@ -2,6 +2,7 @@
 	session_start();
 	if (!isset($_SESSION['connected']))
 		header("Location:connexion.php");
+	$pdo = get_db();
 ?>
 <!DOCTYPE html>
 <html>

@@ -18,9 +18,6 @@ function display($res)
 	}
 }
 
-$dns = "mysql:host=localhost;dbname=portfolio_project;charset=utf8";
-$pdo = new PDO($dns, "root", "");
-
 $query = $pdo->query("SELECT title, purpose, link, git_link, pctr_name, display FROM project");
 $res = $query->fetchAll();
 display($res);

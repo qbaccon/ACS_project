@@ -1,7 +1,4 @@
 <?php
-$dns = "mysql:host=localhost;dbname=portfolio_project;charset=utf8";
-$pdo = new PDO($dns, "root", "");
-
 if (isset($_POST['del']))
 {
 	foreach($_POST as $keys => $values)

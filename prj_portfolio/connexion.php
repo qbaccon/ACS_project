@@ -1,3 +1,7 @@
+<?php
+$pdo = get_db()
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
