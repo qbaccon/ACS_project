@@ -21,9 +21,9 @@ if (isset($_POST['add_prj']))
 		$file = $_FILES['pctr_name_a']['name'];
 		if (!empty($file))
 		{
-			if (!file_exists("pctr/" . $file))
+			if (!file_exists("pctrprj/" . $file))
 			{
-				$target = "pctr/";
+				$target = "pctrprj/";
 				move_uploaded_file($tmp_file, $target . $file);
 			}
 		}
