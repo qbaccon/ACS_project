@@ -29,7 +29,7 @@
 		</section>
 		<div class="add_modal">
       		<div class="modal_container">
-				<form action="project_tool.php" method="post">
+				<form action="project_tool.php" method="post" enctype="multipart/form-data">
 					<p>Renseigner tout les champs</p>
 					<div>
 						<input type="text" name="title_a" maxlength='50' placeholder="Nom" required/>
@@ -44,7 +44,7 @@
 						<input type="text" name="git_link_a" maxlength='100' placeholder="Lien Github" required/>
 					</div>
 					<div>
-						<input type="text" name="pctr_name_a" maxlength='50' placeholder="Nom de l'image" required/>
+						<input type="file" name="pctr_name_a" accept=".jpg, .png, .gif" required/>
 					</div>
 					<div>
 						<label for="visibility">Visible:</label>
