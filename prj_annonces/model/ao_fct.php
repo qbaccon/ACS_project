@@ -27,15 +27,15 @@ if (isset($_POST['new']))
 if (isset($_POST['del']))
 {
 	$pdo = get_db();
-	$pctr = $pdo->query("SELECT pctr FROM annonce WHERE id='".$_POST['id']."'");
+	$pctr = $pdo->query("SELECT pctr FROM annonce WHERE id='".$_POST['pctr_id']."'");
 	$pctr = $pctr->fetch();
-	if ($pctr['pctr'] != "default.gif" && file_exist("../pctr/" . $pctr['pctr']))
+	if ($pctr['pctr'] != "default.gif" && file_exists("../pctr/" . $pctr['pctr']))
 	{
 		unlink("../pctr/" . $pctr['pctr']);
 		$pdo->query("DELETE FROM picture WHERE name='".$pctr['pctr']."'");
 	}
-	$pdo->query("DELETE FROM annonce WHERE id='".$_POST['id']."'");
-	$pdo->query("ALTER TABLE annonce AUTO_INCREMENT = '".$_POST['id']."'");
+	$pdo->query("DELETE FROM annonce WHERE id='".$_POST['pctr_id']."'");
+	$pdo->query("ALTER TABLE annonce AUTO_INCREMENT = '".$_POST['pctr_id']."'");
 }
 
 if (isset($_POST['chg']))
