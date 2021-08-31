@@ -60,7 +60,7 @@ header p
 		display: inline;
 	}
 
-	header a.account_page
+	header a.link_page
 	{
 		display: none;
 	}

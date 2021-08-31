@@ -34,9 +34,5 @@ session_start();
 			</div>
 		</section>
 	</body>
-	<!-- <footer>
-		<div>
-			<p>&copyCopyright Quentin BACCON</p>
-		</div>
-	</footer> -->
+	<script src="script/nav_menu.js"></script>
 </html>
