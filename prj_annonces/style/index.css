@@ -13,7 +13,6 @@
 html
 {
 	background-image: url("../rsrc/background.jpg");
-	/* background-color: #e5e5e5; */
 }
 
 html, body
@@ -66,14 +65,6 @@ header p
 		display: none;
 	}
 }
-
-/* @media (max-width: 360px)
-{
-	header a
-	{
-		font-size: 15px;
-	}
-} */
 
 header a:hover,
 header p:hover
@@ -183,8 +174,6 @@ div#master_container div.pctr
 	align-items: center;
 	background-size: cover;
 	border-radius: 10px;
-	/* width: 220px;
-	height: 280px; */
 }
 
 div#master_container div.pctr p

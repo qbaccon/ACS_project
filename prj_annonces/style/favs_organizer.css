@@ -113,6 +113,11 @@ section#favs div.pctr
 	border-radius: 10px;
 }
 
+section#favs div.pctr img
+{
+	border-radius: 0px 0px 10px 10px;
+}
+
 section#favs div.pctr p
 {
 	width: 100%;
