@@ -83,7 +83,7 @@ div#main_container
 div.annonce_box
 {
 	display: grid;
-	grid-template-rows: auto 200px auto auto auto auto;
+	grid-template-rows: auto 220px auto auto auto auto;
 	grid-template-columns: 160px 160px;
 	background-color: #09410c;
 	border: solid 2px #252525;

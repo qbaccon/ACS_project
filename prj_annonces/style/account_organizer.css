@@ -209,8 +209,8 @@ section#pswd form input#confirm
 
 section#pswd input#confirm
 {
-	font-size: 18px;
-	font-family: Audiowibe;
+	font-size: 20px;
+	font-family: Abel;
 	color: #252525;
 	border: solid 2px #e5e5e5;
 	border-radius: 10px;
@@ -228,13 +228,13 @@ section#pswd input#confirm:hover
 section#del_account
 {
 	border: none;
-	background-color: #e5e5e5;
+	background-color: #252525;
 }
 
 section#del_account input
 {
 	font-size: 20px;
-	font-family: Audiowibe;
+	font-family: Abel;
 	color: #e5e5e5;
 	border: solid 2px #e5e5e5;
 	border-radius: 10px;

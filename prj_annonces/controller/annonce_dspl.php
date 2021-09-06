@@ -17,7 +17,7 @@ if (!empty($annonce))
 		echo "<form action='annonce_organizer.php' method='post'>";
 		echo "<div class='annonce_box'>";
 		echo "<input value='".$value['ann_id']."' name='id' type='hidden'></input>";
-		echo "<div class='pctr'><img src='../pctr/".$value['pctr']."' height='200px' width='160px'></img></div>";
+		echo "<div class='pctr'><img src='../pctr/".$value['pctr']."' height='220px' width='160px'></img></div>";
 		echo "<div class='title'>";
 		echo "<label for='title'>Titre</label>";
 		echo "<input id='a".$value['ann_id']."' type='text' value='". $value['title']."' name='title' disabled></input>";
