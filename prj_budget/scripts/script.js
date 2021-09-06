@@ -1,5 +1,4 @@
 let tabTransfers = [];
-// console.log(tabTransfers);
 
 let btnExpense = document.querySelector('#btn-new-expense');
 let btnIncome = document.querySelector('#btn-new-income');
@@ -26,8 +25,7 @@ function fillTabTransfers(transferts) {
     transferts.forEach(elt => {
         tabTransfers.push({'label': elt.label, 'expense': elt.expense, 'income': elt.income, 'lineId': elt.lineId});
     });
-
-    generateTab();
+    // generateTab();
 }
 
 function addExpense() {
@@ -67,6 +65,3 @@ function addIncome() {
 	inpIncome.value = '';
 	inpLabel.value = '';
 }
-
-
-
