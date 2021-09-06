@@ -1,8 +1,5 @@
 <?php
 
-$dns = "mysql:host=localhost;dbname=portfolio_project;charset=utf8";
-$pdo = new PDO($dns, "root", "");
-
 $query = $pdo->query("SELECT name, mdp FROM admin_user");
 $res = $query->fetchAll();
 session_start();

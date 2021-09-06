@@ -1,7 +1,4 @@
 <?php
-$dns = "mysql:host=localhost;dbname=portfolio_project;charset=utf8";
-$pdo = new PDO($dns, "root", "");
-
 if (isset($_POST['del']))
 {
 	foreach($_POST as $keys => $values)
@@ -14,14 +11,23 @@ if (isset($_POST['del']))
 
 if (isset($_POST['add_prj']))
 {
-	if(!empty($_POST["title_a"]) && !empty($_POST["purpose_a"]) && !empty($_POST["link_a"])
-		&& !empty($_POST["git_link_a"]) && !empty($_POST["pctr_name_a"]))
+	if(!empty($_POST["title_a"]) && !empty($_POST["purpose_a"]) && !empty($_POST["link_a"]) && !empty($_POST["git_link_a"]))
 	{
 		if (isset($_POST['visibility']))
 			$vis = 1;
 		else
 			$vis = 0;
-		$pdo->query("INSERT INTO project VALUES (DEFAULT, '".$_POST['title_a']."', '".$_POST['purpose_a']."', '".$_POST['link_a']."', '".$_POST['git_link_a']."', '".$_POST['pctr_name_a']."', $vis)");
+		$tmp_file = $_FILES['pctr_name_a']['tmp_name'];
+		$file = $_FILES['pctr_name_a']['name'];
+		if (!empty($file))
+		{
+			if (!file_exists("pctrprj/" . $file))
+			{
+				$target = "pctrprj/";
+				move_uploaded_file($tmp_file, $target . $file);
+			}
+		}
+		$pdo->query("INSERT INTO project VALUES (DEFAULT, '".$_POST['title_a']."', '".$_POST['purpose_a']."', '".$_POST['link_a']."', '".$_POST['git_link_a']."', '".$file."', $vis)");
 		header("Location:project_tool.php");
 	}
 }
