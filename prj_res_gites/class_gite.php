@@ -76,8 +76,8 @@ class Gite
 
 	public static function send_mail($adr)
 	{
-		$msg = "Votre à bien été enregistré";
-		mail($adr, "Résérvation", $msg);
+		$msg = "Votre reservation à bien été enregistré";
+		mail($adr, "Reservation", $msg);
 	}
 }
 

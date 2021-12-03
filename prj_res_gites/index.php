@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style/main.css" />
 	<link rel="icon" href="pctrs/favicon.gif"/>
-	<title>Gites</title>	
+	<title>Gites</title>
 	</head>
 	<body>	
 	<?php include "fct/fct_res.php"?>
@@ -18,17 +18,17 @@
 				<p>Gites proposés par Dada</p>
 			</div>
 			<div id="filter">
-				<div class="form-group"> 
+				<div class="form-group">
 					<label for="Lits">Lits (au moins)</label>
-					<input type="int" id="nb_bed" name="nb_bed"> 
+					<input type="int" id="nb_bed" name="nb_bed">
 				</div>
-				<div class="form-group"> 
+				<div class="form-group">
 					<label for="nb_bath">SdB (au moins)</label>
-					<input type="int" id="nb_bath" name="nb_bath"> 
+					<input type="int" id="nb_bath" name="nb_bath">
 				</div>
-				<div class="form-group"> 
+				<div class="form-group">
 					<label for="où">Où?</label>
-					<input type="text" id="where" name="geoloc"> 
+					<input type="text" id="where" name="geoloc">
 				</div>
 				<div class="form-group"> 
 					<label for="price">Prix (au plus)</label>
