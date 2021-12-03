@@ -5,7 +5,7 @@ if (isset($_POST['del']))
 {
 	$pdo = get_db();
 	$pdo->query("DELETE FROM picture WHERE id = '".$_POST['pctr_id']."'");
-	$pdo->query("ALTER TABLE annonce AUTO_INCREMENT = '".$_POST['pctr_id']."'");
+	$pdo->query("ALTER TABLE picture AUTO_INCREMENT = '".$_POST['pctr_id']."'");
 	unlink("../pctr/" . $_POST['pctr_name']);
 	header('Location: pctr_dspl.php');
 }

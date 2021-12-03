@@ -9,9 +9,9 @@ if (isset($_POST['register']))
 	if (!empty($query))
 	{
 		$query = $query->fetchAll();
-		foreach($query as $key => $value)
+		foreach($query as $user)
 		{
-			if ($value[$key] == $_POST['mail_r'])
+			if ($user['mail'] == $_POST['mail_r'])
 			{
 				$check = 0;
 				echo "<p id='warn_mess'>Email déjà utilisé</p>";

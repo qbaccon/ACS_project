@@ -1,13 +1,12 @@
 <?php
 if (isset($_POST['del_acnt']))
 {
-	$pctrs = get_pctr();
-	if ($pctrs != "empty")
+	if ($picture != "empty")
 	{
-		foreach($pctrs as $file)
+		foreach($picture as $file)
 		{
-			if ($file != "default.gif" && $file != "." && $file != "..")
-				unlink("../pctr/" . $file);
+			if ($file['name'] != "default.gif" && $file['name'] != "." && $file['name'] != "..")
+				unlink("../pctr/" . $file['name']);
 		}
 	}
 	$pdo->query("DELETE FROM annonce WHERE id_user = '".$_SESSION['who_id']."'");
