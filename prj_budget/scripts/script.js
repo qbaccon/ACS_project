@@ -16,16 +16,11 @@ btnExpense.addEventListener('click', addExpense);
 btnIncome.addEventListener('click', addIncome);
 
 //////////////////////////////////////////////////////////
-getOperations();
-
-sum_tab = get_sum();
-sum_dspl(sum_tab);
-
 function fillTabTransfers(transferts) {
     transferts.forEach(elt => {
-        tabTransfers.push({'label': elt.label, 'expense': elt.expense, 'income': elt.income, 'lineId': elt.lineId});
+        tabTransfers.push({'label': elt.label, 'expense': Number(elt.expense), 'income': Number(elt.income), 'lineId': elt.lineId});
     });
-    // generateTab();
+    generateTab();
 }
 
 function addExpense() {
@@ -65,3 +60,8 @@ function addIncome() {
 	inpIncome.value = '';
 	inpLabel.value = '';
 }
+
+getOperations();
+
+sum_tab = get_sum();
+sum_dspl(sum_tab);

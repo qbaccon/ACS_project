@@ -9,14 +9,12 @@ function generateTab() {
     }
 }
 
-function createLine(index, lineObject, nb_line) {
+function createLine(index, lineObject) {
     let line = document.createElement('form');
     line.id = 'line-' + index;
 
     let lab = document.createElement('input');
     lab.type = 'text';
-	if (index + 1 == nb_line)
-		lab.className = 'inp-label-last-line';
     lab.id = 'inp-label-' + index;
     lab.value = lineObject.label;
     lab.disabled = true;
